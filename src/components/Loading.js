@@ -1,14 +1,14 @@
-import React from "react";
-import { Container, Spinner, Image } from "react-bootstrap";
-import Logo from "./Logo";
+import { Spinner } from "react-bootstrap";
 
-export default function Loading() {
+const Loading = () => {
 
   return (
-    <div>
-      <Spinner animation="grow" variant="warning">
-        <Logo px={32} py={32} />
-      </Spinner>
-    </div>
+    <>
+      <Spinner animation="grow" variant="warning"></Spinner>
+      <Spinner animation="grow" variant="primary"></Spinner>
+      <Spinner animation="grow" variant="dark"></Spinner>
+    </ >
   );
-}
+};
+
+export default Loading;

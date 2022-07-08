@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
-import Logo from './Logo'
-import { Navbar, Container, Offcanvas, Nav, NavDropdown, Form, FormControl, Button, Row, Col } from 'react-bootstrap';
-import Darkmode from './Darkmode';
-import Language from './Language';
+import React, { useState } from 'react';
+import Logo from './Logo';
+import { Navbar, Container, Offcanvas, Nav } from 'react-bootstrap';
+import Navigationbar from "./Navigationbar";
 
-const Navigation = (props) => {
+const Navigation = ({ darkMode,
+    handleChangeMode,
+    language,
+    handleChangeLanguage,
+    setShowWindow
+}) => {
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -13,12 +17,13 @@ const Navigation = (props) => {
     return (
         <Navbar
             expand={false}
-            variant={props.vdarkMode}>
+            variant={darkMode.keyName}>
             <Container fluid>
                 <Navbar.Brand href="#">
-                    <Logo px="90" py="90" />
-                    {" "}
-                    <b>ACERTIJO</b>
+                    <Logo
+                        darkMode={darkMode}
+                        px="270"
+                        py="70" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />
                 <Navbar.Offcanvas
@@ -32,28 +37,24 @@ const Navigation = (props) => {
                     </Offcanvas.Header>
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3">
-                            <Nav.Link onClick={() => { props.setShowWindow("H"); handleClose(); }}>Home</Nav.Link>
+                            <Nav.Link onClick={() => { setShowWindow("H"); handleClose(); }}>Home</Nav.Link>
+                            {/*
                             <Nav.Link onClick={() => { props.setShowWindow("A"); handleClose(); }}>About</Nav.Link>
                             <Nav.Link onClick={() => { props.setShowWindow("C"); handleClose(); }}>CV</Nav.Link>
                             <Nav.Link onClick={() => { props.setShowWindow("O"); handleClose(); }}>Contact</Nav.Link>
+                          */}
                             <Nav.Link>
-                                <Darkmode
-                                    darkMode={props.darkMode}
-                                    setDarkMode={props.setDarkMode}
-                                    imgh={45}
-                                    imgw={45}
-                                />
-                                <Language language={props.language}
-                                    setLanguage={props.setLanguage}
-                                    imgh={25}
-                                    imgw={25} />
+                                <Navigationbar darkMode={darkMode}
+                                    handleChangeMode={handleChangeMode}
+                                    language={language}
+                                    handleChangeLanguage={handleChangeLanguage} />
                             </Nav.Link>
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
             </Container>
         </Navbar>
-    )
-}
+    );
+};
 
-export default Navigation
+export default Navigation;

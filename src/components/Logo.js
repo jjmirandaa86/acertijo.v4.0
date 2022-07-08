@@ -1,15 +1,24 @@
-import React from 'react'
+import React from 'react';
 
-const Logo = (props) => {
+const Logo = ({ darkMode, px, py }) => {
+
     return (
         <>
-            <img src="./image/logo.svg"
-                width={props.px}
-                height={props.py}
-                className="App-logo"
-                alt="logo" />
+            {darkMode.status ?
+                <img src="./image/acertijo_logo_blanco.png"
+                    width={px}
+                    height={py}
+                    className="App-logo"
+                    alt="logo" />
+                :
+                <img src="./image/acertijo_logo.png"
+                    width={px}
+                    height={py}
+                    className="App-logo"
+                    alt="logo" />
+            }
         </>
-    )
-}
+    );
+};
 
-export default Logo
+export default Logo;

@@ -1,23 +1,30 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import Darkmode from './Darkmode'
-import Language from './Language'
+import Darkmode from './Darkmode';
+import Language from './Language';
 
-const Navigationbar = (props) => {
+const Navigationbar = ({ darkMode, handleChangeMode, language, handleChangeLanguage }) => {
+
+    const styles = {
+        padding: "10px 15px 10px 20px"
+    };
+
     return (
         <div class="text-end">
-            <Container>
-                <Darkmode darkMode={props.darkMode}
-                    setDarkMode={props.setDarkMode}
+            <div style={styles}>
+                <Darkmode
+                    darkMode={darkMode}
+                    handleChangeMode={handleChangeMode}
                     imgh={25}
-                    imgw={25} />
-                <Language language={props.language}
-                    setLanguage={props.setLanguage}
-                    imgh={25}
-                    imgw={25} />
-            </Container>
+                    imgw={25}
+                />
+                {" "}
+                <Language
+                    language={language}
+                    handleChangeLanguage={handleChangeLanguage}
+                    imgh={20}
+                    imgw={20} />
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Navigationbar
+export default Navigationbar;

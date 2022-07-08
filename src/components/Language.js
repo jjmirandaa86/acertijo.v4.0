@@ -1,44 +1,23 @@
-import React from 'react'
+import React from 'react';
 import { Image } from 'react-bootstrap';
 
-const Language = (props) => {
+const Language = ({ language, handleChangeLanguage, imgh, imgw }) => {
 
     return (
         <>
-            <a onClick={() => {
-                if (props.language === "EN") {
-                    props.setLanguage("ES");
-                }
-
-                if (props.language === "ES") {
-                    props.setLanguage("EN");
-                }
-
-            }}>
-                {(props.language === "ES") ?
-                    <Image
-                        src={"./image/ES.svg"}
-                        style={{
-                            height: props.imgh,
-                            width: props.imgw,
-                            alignItems: "center",
-                            justifyContent: "center",
-                        }}
-                    /> :
-                    <Image
-                        src={"./image/EN.svg"}
-                        style={{
-                            height: props.imgh,
-                            width: props.imgw,
-                            alignItems: "center",
-                            justifyContent: "center",
-                        }}
-                    />}
-
+            <a onClick={() => handleChangeLanguage()}>
+                <Image
+                    src={"./image/" + language.urlImage}
+                    style={{
+                        height: imgh,
+                        width: imgw,
+                        alignItems: "center",
+                        justifyContent: "center",
+                    }}
+                />
             </a>
-
         </>
-    )
-}
+    );
+};
 
-export default Language
+export default Language;

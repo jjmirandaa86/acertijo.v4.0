@@ -1,18 +1,18 @@
-import React from 'react'
+import React from 'react';
 import { Image } from 'react-bootstrap';
 
-const Darkmode = (props) => {
+const Darkmode = ({ darkMode, handleChangeMode, imgh, imgw }) => {
     return (
         <>
             <a onClick={() => {
-                props.setDarkMode(!props.darkMode)
+                handleChangeMode();
             }}>
-                {(props.darkMode === true) ?
+                {(darkMode.status === true) ?
                     <Image
                         src={"./image/sunLight.svg"}
                         style={{
-                            height: props.imgh,
-                            width: props.imgw,
+                            height: imgh,
+                            width: imgw,
                             alignItems: "center",
                             justifyContent: "center",
                         }}
@@ -20,17 +20,15 @@ const Darkmode = (props) => {
                     <Image
                         src={"./image/sunDark.svg"}
                         style={{
-                            height: props.imgh,
-                            width: props.imgw,
+                            height: imgh,
+                            width: imgw,
                             alignItems: "center",
                             justifyContent: "center",
                         }}
                     />}
-
             </a>
-
         </>
-    )
-}
+    );
+};
 
-export default Darkmode
+export default Darkmode;

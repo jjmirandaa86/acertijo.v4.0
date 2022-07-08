@@ -1,28 +1,18 @@
-import React, { useState } from "react";
-import { Container } from "react-bootstrap";
-import Cv from './Cv'
-import Home from './Home'
-import About from './About'
-import Contact from './Contact'
+import Cv from './Cv';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
 
-const Body = (props) => {
+const Body = ({ showWindow, darkMode, language }) => {
 
     return (
         <>
-            {props.showWindow === "H" &&
-                <Home vdarkMode={props.vdarkMode} />}
-
-            {props.showWindow === "A" &&
-                <About vdarkMode={props.vdarkMode} />}
-
-            {props.showWindow === "C" &&
-                <Cv vdarkMode={props.vdarkMode} />}
-
-            {props.showWindow === "O" &&
-                <Contact vdarkMode={props.vdarkMode} />}
-
+            {showWindow === "H" && <Home darkMode={darkMode} languageKey={language.key} />}
+            {showWindow === "A" && <About darkModeStatus={darkMode.status} languageKey={language.key} />}
+            {showWindow === "C" && <Cv darkModeStatus={darkMode.status} languageKey={language.key} />}
+            {showWindow === "O" && <Contact darkModeStatus={darkMode.status} languageKey={language.key} />}
         </>
-    )
-}
+    );
+};
 
-export default Body
+export default Body;
