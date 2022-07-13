@@ -6,7 +6,7 @@ import Socialnetworks from './Socialnetworks';
 const Footer = ({ darkMode }) => {
     return (
         <>
-            <div className="card-footer">
+            <div className="navbar navbar-fixed-bottom">
                 <Card.Body>
                     <Row>
                         <Col lg md="2" xs="12">
@@ -31,6 +31,20 @@ const Footer = ({ darkMode }) => {
                         © 2022 <cite title="Source Title">Jefferson Miranda</cite>. All Rights Reserved.
                     </Card.Text>
                 </Card.Body>
+                <Navbar fixed="bottom" className="justify-content-center">
+                    <Nav>
+                        <h2>
+                            <Nav.Link href="/home">Home</Nav.Link>
+                            <Nav.Link href="/home">About</Nav.Link>
+                            <Nav.Link href="/home">Cv</Nav.Link>
+                            <Nav.Link href="/home">Contact</Nav.Link>
+                        </h2>
+                    </Nav>
+                    <div>
+                        <p>ddd</p>
+
+                    </div>
+                </Navbar>
             </div>
         </>
     );
