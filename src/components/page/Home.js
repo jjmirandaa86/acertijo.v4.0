@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Card, Image, Container } from "react-bootstrap";
-import Socialnetworks from './Socialnetworks';
+import LanguageContext from "../../contexts/LanguageContext";
+import ThemeContext from "../../contexts/ThemeContext";
+import Socialnetworks from "../layout/Socialnetworks";
 
-const Home = ({ darkMode, languageKey }) => {
+const Home = () => {
+
+    const { texts } = useContext(LanguageContext);
+    const { theme } = useContext(ThemeContext);
 
     const styles = {
         margin: "1rem auto",
@@ -10,34 +15,33 @@ const Home = ({ darkMode, languageKey }) => {
 
     return (
         <>
-            <Card bg={darkMode.keyName.toLowerCase()}
-                text={darkMode.keyName === 'light' ? 'dark' : 'white'}>
+            <Card bg={theme.toLowerCase()}
+                text={theme === 'light' ? 'dark' : 'white'}>
                 <Card.Body>
                     <Image
                         variant="top"
                         roundedCircle
-                        src={darkMode.status === false
+                        src={theme === "light"
                             ? "./image/perfil-gris50.jpeg"
                             : "./image/perfil-gris100.jpeg"}
                         height={"300"}
                         width={"300"} />
                     <Card.Title>
                         <div style={styles}>
-                            <h1><strong>Jefferson Miranda A.</strong></h1>
-                            <h2><strong>Software developer</strong></h2>
+                            <h1><strong>{texts.page_home_title} </strong></h1>
+                            <h2><strong>{texts.page_home_subtitle} </strong></h2>
                         </div>
                     </Card.Title>
                     <Card.Text>
                         <Container>
                             <h3>
-                                I'm <strong>full stack software developer</strong>  living in Guayaquil, Ecuador.
-                                I'm the maintainer of Create React App and a member of the Node.js team.
-                                I also work on a number of other open source projects, mostly in the JavaScript ecosystems.
-                                More about me.
+                                <strong>{texts.page_home_body1}</strong>
+                                {texts.page_home_body2}
+                                {texts.page_home_body3}
                             </h3>
                         </Container>
                         <div>
-                            <Socialnetworks />
+                            <Socialnetworks interactive={true} />
                         </div>
                     </Card.Text>
                 </Card.Body>

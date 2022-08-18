@@ -1,12 +1,12 @@
-import React from 'react'
-import Header from './Cv/Header'
-import Skillshability from './Cv/Skillshability'
-import Skillsprograming from './Cv/Skillsprograming'
+import React from 'react';
+import Header from '../Cv/Header';
+import Skillshability from '../Cv/Skillshability';
+import Skillsprograming from '../Cv/Skillsprograming';
 import { ProgressBar, Col, Row, ListGroup, Card } from "react-bootstrap";
-import Resumeobjetive from './Cv/Resumeobjetive';
-import Experence from './Cv/Experence';
-import Education from './Cv/Education';
-import Certificate from './Cv/Certificate';
+import Resumeobjetive from '../Cv/Resumeobjetive';
+import Experence from '../Cv/Experence';
+import Education from '../Cv/Education';
+import Certificate from '../Cv/Certificate';
 
 const Cv = () => {
 
@@ -21,7 +21,7 @@ const Cv = () => {
 
     return (
         <>
-            <a onClick={() => { window.print() }} >Imprimir</a>
+            <a onClick={() => { window.print(); }} >Imprimir</a>
             <div id="resume">
                 <Header />
                 <Row>
@@ -61,7 +61,7 @@ const Cv = () => {
                 </Row>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Cv
+export default Cv;

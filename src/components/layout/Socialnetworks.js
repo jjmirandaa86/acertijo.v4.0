@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Image } from 'react-bootstrap';
 
-const Socialnetworks = () => {
+const Socialnetworks = ({ interactive }) => {
 
-    const [typePicture, setTypePicture] = useState(true);
+    const [typePicture, setTypePicture] = useState(interactive);
 
     const styles = {
         margin: "1rem auto",
@@ -34,7 +34,7 @@ const Socialnetworks = () => {
         {
             id: 4,
             name: "Spotify",
-            url: "https://open.spotify.com",
+            url: "https://open.spotify.com/user/22zwfkq7vgxvcheii4rhj5mxq?si=bsg0xs4UT769sFTHMjVR_g",
             pictureAnimated: "icons8-spotify.gif",
             picture: "icons8-spotify.svg"
         },
@@ -47,19 +47,22 @@ const Socialnetworks = () => {
         }
     ];
 
+    /*
+    //para hacer interactivo los iconos despues de un tiempo
     setInterval(() => {
         setTypePicture(false);
     }, 5000);
+    */
 
     return (
         <div style={styles}>
             {
-                oNetworkJson.map((el) => {
-                    return <a target="_blank" href={el.url} >
+                oNetworkJson.map((el, index) => {
+                    return <a key={index} target="_blank" href={el.url} >
                         <Image roundedCircle
-                            src={typePicture === true
-                                ? "./image/" + el.picture
-                                : "./image/" + el.pictureAnimated}
+                            src={typePicture
+                                ? "./image/" + el.pictureAnimated
+                                : "./image/" + el.picture}
                             height={"50"}
                             width={"50"}
                         />

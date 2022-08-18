@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { Card, Button, Image, Row, Col, Container } from "react-bootstrap";
-import Socialnetworks from "./Socialnetworks"
+import Socialnetworks from "../layout/Socialnetworks";
 
 const About = (props) => {
     return (
@@ -72,7 +72,7 @@ const About = (props) => {
                 </Row>
             </Card.Body>
         </>
-    )
-}
+    );
+};
 
-export default About
+export default About;

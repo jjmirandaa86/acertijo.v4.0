@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Image } from 'react-bootstrap';
+import ThemeContext from "../../contexts/ThemeContext";
 
-const Darkmode = ({ darkMode, handleChangeMode, imgh, imgw }) => {
+const Darkmode = ({ imgh, imgw }) => {
+
+    const { theme, handleChangeTheme } = useContext(ThemeContext);
+
     return (
         <>
             <a onClick={() => {
-                handleChangeMode();
+                handleChangeTheme();
             }}>
-                {(darkMode.status === true) ?
+                {(theme === "dark") ?
                     <Image
                         src={"./image/sunLight.svg"}
                         style={{

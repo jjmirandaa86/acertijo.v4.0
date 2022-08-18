@@ -1,57 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import Navigation from './Navigation';
-import { Button, Container } from 'react-bootstrap';
-import Body from './Body';
-import Footer from './Footer';
-import Navigationbar from './Navigationbar';
+import React, { useContext, useEffect, useState } from 'react';
+import { Container } from 'react-bootstrap';
+import Navigation from './menu/Navigation';
+import Navigationbar from './menu/Navigationbar';
+import Body from './layout/Body';
+import Footer from './layout/Footer';
+import ThemeContext from "../contexts/ThemeContext";
 
 const Main = () => {
+
+    const { theme } = useContext(ThemeContext);
     const [showWindow, setShowWindow] = useState("H");
-    const [language, setLanguage] = useState({ key: "EN", urlImage: "EN.svg" });
-    const [darkMode, setDarkMode] = useState({ status: false, keyName: "light" });
-
-    const handleChangeMode = () => {
-        darkMode.status === true
-            ? setDarkMode({ status: false, keyName: "light" })
-            : setDarkMode({ status: true, keyName: "dark" });
-    };
-
-    const handleChangeLanguage = () => {
-        if (language.key === "ES") {
-            setLanguage({ key: "EN", urlImage: "EN.svg" });
-            return;
-        };
-        if (language.key === "EN") {
-            setLanguage({ key: "ES", urlImage: "ES.svg" });
-            return;
-        };
-    };
 
     return (
         <Container>
-            <div className={"bg-" + darkMode.keyName}>
+            <div className={"bg-" + theme}>
                 <Navigation
-                    darkMode={darkMode}
-                    handleChangeMode={handleChangeMode}
-                    language={language}
-                    handleChangeLanguage={handleChangeLanguage}
                     setShowWindow={setShowWindow}
                 />
-                <Navigationbar
-                    darkMode={darkMode}
-                    handleChangeMode={handleChangeMode}
-                    language={language}
-                    handleChangeLanguage={handleChangeLanguage} />
-
+                <Navigationbar />
                 <Container >
                     <Body
                         showWindow={showWindow}
-                        darkMode={darkMode}
-                        language={language} />
+                    />
                 </Container>
-                <Footer
-                    darkMode={darkMode}
-                />
+                <Footer />
+
             </div>
         </Container>
     );

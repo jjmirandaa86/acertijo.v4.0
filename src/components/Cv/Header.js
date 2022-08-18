@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Card, Button, Image, Row, Col, Container } from "react-bootstrap";
 
 const Header = () => {
@@ -12,9 +12,9 @@ const Header = () => {
                     </Card.Subtitle>
                     <Card.Text>
                         +593-993277375
-                        <div class="vr"></div>
+                        <div className="vr"></div>
                         <a href="mailto:jmiranda@acertijo.dev">jmiranda@acertijo.dev</a>
-                        <div class="vr"></div>
+                        <div className="vr"></div>
                         <a href=' https://www.linkedin.com/in/jjmirandaa86/'>
                             https://www.linkedin.com/in/jjmirandaa86/
                         </a>
@@ -22,7 +22,7 @@ const Header = () => {
                 </Card.Body>
             </Card>
         </>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
