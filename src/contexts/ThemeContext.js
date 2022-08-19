@@ -13,6 +13,10 @@ const ThemeProvider = ({ children }) => {
     else { setTheme("light"); }
   };
 
+  //  setTimeout(() => handleChangeTheme(), 1000);
+  //  setTimeout(() => handleChangeTheme(), 10000);
+
+
   const data = { theme, setTheme, handleChangeTheme };
 
   return (

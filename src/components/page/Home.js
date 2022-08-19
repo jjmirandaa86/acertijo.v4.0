@@ -33,13 +33,11 @@ const Home = () => {
                         </div>
                     </Card.Title>
                     <Card.Text>
-                        <Container>
-                            <h3>
-                                <strong>{texts.page_home_body1}</strong>
-                                {texts.page_home_body2}
-                                {texts.page_home_body3}
-                            </h3>
-                        </Container>
+                        <h3>
+                            <strong>{texts.page_home_body1} {" "} </strong>
+                            {" "}{texts.page_home_body2}
+                            {" "}{texts.page_home_body3}
+                        </h3>
                         <div>
                             <Socialnetworks interactive={true} />
                         </div>

@@ -19,9 +19,7 @@ const Main = () => {
                 />
                 <Navigationbar />
                 <Container >
-                    <Body
-                        showWindow={showWindow}
-                    />
+                    <Body showWindow={showWindow} />
                 </Container>
                 <Footer />
 
