@@ -5,19 +5,3 @@ https://iansutherland.ca/
 https://readme.so/es/editor
 
 https://rahuldkjain.github.io/gh-profile-readme-generator/
-
-
-
-Materiales nuevos (Unidad de medida y conversion)
-tener los nombres de las utilizaciones.
-
-04/abril
- - introduccion y recoleccion (ambas -> envase y chancleta)
- - 1 fase, 2 cjas introduccion con 2 cjas, recoleccion a la vez.
- - control manual, se asigna contrato solo a clientes q actualmente tienen envase.
- - 
-
-10 - 130 Billetes
-20 - 65 Billetes
-50 - 26 Billetes
-100- 13 Billetes
