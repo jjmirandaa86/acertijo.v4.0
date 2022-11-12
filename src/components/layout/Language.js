@@ -3,7 +3,7 @@ import LanguageContext from "../../contexts/LanguageContext";
 
 const Language = ({ imgh, imgw }) => {
 
-    const { language, handleLanguage, listLanguage } = useContext(LanguageContext);
+    const { language, handleLanguage, listLanguage, texts } = useContext(LanguageContext);
 
     const { id, name, flag } = listLanguage.find(e => e.id === language);
 
@@ -17,7 +17,7 @@ const Language = ({ imgh, imgw }) => {
                     alignItems: "center",
                     justifyContent: "center"
                 }}
-                alt={name}
+                alt={texts.flag_img_alt + name}
                 onClick={() => handleLanguage()}
             />
         </>

@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 import { Image } from 'react-bootstrap';
 import ThemeContext from "../../contexts/ThemeContext";
+import LanguageContext from "../../contexts/LanguageContext";
 
 const Darkmode = ({ imgh, imgw }) => {
 
     const { theme, handleChangeTheme } = useContext(ThemeContext);
+    const { texts } = useContext(LanguageContext);
 
     return (
         <>
@@ -14,21 +16,25 @@ const Darkmode = ({ imgh, imgw }) => {
                 {(theme === "dark") ?
                     <Image
                         src={"./image/sunLight.svg"}
+                        alt={texts.language_img_dark_alt}
                         style={{
                             height: imgh,
                             width: imgw,
                             alignItems: "center",
                             justifyContent: "center",
                         }}
+                        href=""
                     /> :
                     <Image
                         src={"./image/sunDark.svg"}
+                        alt={texts.language_img_light_alt}
                         style={{
                             height: imgh,
                             width: imgw,
                             alignItems: "center",
                             justifyContent: "center",
                         }}
+                        href=""
                     />}
             </a>
         </>
