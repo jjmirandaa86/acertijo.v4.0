@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Navigation from './menu/Navigation';
-import Navigationbar from './menu/Navigationbar';
+import NavigationBar from './menu/NavigationBar';
 import Body from './layout/Body';
 import Footer from './layout/Footer';
 import ThemeContext from "../contexts/ThemeContext";
@@ -17,11 +17,12 @@ const Main = () => {
                 <Navigation
                     setShowWindow={setShowWindow}
                 />
-                <Navigationbar />
+                <NavigationBar />
                 <Container >
                     <Body showWindow={showWindow} />
                 </Container>
-                <Footer />
+                <Footer
+                    setShowWindow={setShowWindow} />
 
             </div>
         </Container>

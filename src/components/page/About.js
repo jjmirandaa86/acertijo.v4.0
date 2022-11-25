@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Button, Image, Row, Col, Container } from "react-bootstrap";
-import Socialnetworks from "../layout/Socialnetworks";
+import SocialNetworks from "../layout/SocialNetworks";
 
 const About = (props) => {
     return (

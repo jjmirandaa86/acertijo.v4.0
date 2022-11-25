@@ -3,9 +3,12 @@ import { Image } from 'react-bootstrap';
 import ThemeContext from "../../contexts/ThemeContext";
 import LanguageContext from "../../contexts/LanguageContext";
 
-const Darkmode = ({ imgh, imgw }) => {
+const DarkMode = ({ height, width }) => {
 
-    const { theme, handleChangeTheme } = useContext(ThemeContext);
+    const {
+        theme,
+        handleChangeTheme
+    } = useContext(ThemeContext);
     const { texts } = useContext(LanguageContext);
 
     return (
@@ -18,8 +21,8 @@ const Darkmode = ({ imgh, imgw }) => {
                         src={"./image/sunLight.svg"}
                         alt={texts.language_img_dark_alt}
                         style={{
-                            height: imgh,
-                            width: imgw,
+                            height: height,
+                            width: width,
                             alignItems: "center",
                             justifyContent: "center",
                         }}
@@ -29,8 +32,8 @@ const Darkmode = ({ imgh, imgw }) => {
                         src={"./image/sunDark.svg"}
                         alt={texts.language_img_light_alt}
                         style={{
-                            height: imgh,
-                            width: imgw,
+                            height: height,
+                            width: width,
                             alignItems: "center",
                             justifyContent: "center",
                         }}
@@ -41,4 +44,4 @@ const Darkmode = ({ imgh, imgw }) => {
     );
 };
 
-export default Darkmode;
+export default DarkMode;

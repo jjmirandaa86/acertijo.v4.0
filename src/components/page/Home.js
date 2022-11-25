@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Card, Image, Container } from "react-bootstrap";
 import LanguageContext from "../../contexts/LanguageContext";
 import ThemeContext from "../../contexts/ThemeContext";
-import Socialnetworks from "../layout/Socialnetworks";
+import SocialNetworks from "../layout/SocialNetworks";
 
 const Home = () => {
 
@@ -63,7 +63,7 @@ const Home = () => {
                             {" "}{texts.page_home_body3}
                         </h3>
                         <div>
-                            <Socialnetworks interactive={true} />
+                            <SocialNetworks interactive={true} />
                         </div>
                     </Card.Text>
                 </Card.Body>

@@ -9,8 +9,9 @@ const initialListLanguage = [
 
 const translations = {
   ES: {
-    slidebar_menu_title: "Menú",
-    slidebar_home_title: "Inicio",
+    slideBar_menu_title: "Menú",
+    slideBar_home_title: "Inicio",
+    slideBar_contact_title: "Contacto",
 
     modePage_alt: "Modo de navegacion",
     language_alt: "Lenguaje de la pagina",
@@ -36,8 +37,9 @@ const translations = {
 
   },
   EN: {
-    slidebar_menu_title: "Menu",
-    slidebar_home_title: "Home",
+    slideBar_menu_title: "Menu",
+    slideBar_home_title: "Home",
+    slideBar_contact_title: "Contact",
 
     modePage_alt: "Navigation mode",
     language_alt: "Lenguage of the page",

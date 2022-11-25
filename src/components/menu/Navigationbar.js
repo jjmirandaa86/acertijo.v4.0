@@ -1,7 +1,7 @@
-import Darkmode from '../layout/Darkmode';
+import DarkMode from '../layout/DarkMode';
 import Language from '../layout/Language';
 
-const Navigationbar = () => {
+const NavigationBar = () => {
 
     const styles = {
         padding: "10px 15px 10px 20px"
@@ -10,17 +10,17 @@ const Navigationbar = () => {
     return (
         <div className="text-end" >
             <div style={styles}>
-                <Darkmode
-                    imgh={25}
-                    imgw={25}
+                <DarkMode
+                    height={25}
+                    width={25}
                 />
                 {" "}
                 <Language
-                    imgh={20}
-                    imgw={20} />
+                    height={20}
+                    width={20} />
             </div>
         </div >
     );
 };
 
-export default Navigationbar;
+export default NavigationBar;

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import LanguageContext from "../../contexts/LanguageContext";
 
-const Language = ({ imgh, imgw }) => {
+const Language = ({ height, width }) => {
 
     const { language, handleLanguage, listLanguage, texts } = useContext(LanguageContext);
 
@@ -11,8 +11,8 @@ const Language = ({ imgh, imgw }) => {
         <>
             <img
                 src={"./image/" + flag}
-                height={imgh}
-                width={imgw}
+                height={height}
+                width={width}
                 style={{
                     alignItems: "center",
                     justifyContent: "center"

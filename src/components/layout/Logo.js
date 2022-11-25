@@ -8,8 +8,8 @@ const Logo = ({ px, py }) => {
     return (
         <>
             <img src={theme === "dark" ?
-                "./image/acertijo_logo_blanco.png" :
-                "./image/acertijo_logo_oscuro.png"}
+                "./image/logo_white.png" :
+                "./image/logo_dark.png"}
                 width={px}
                 height={py}
                 className="App-logo"

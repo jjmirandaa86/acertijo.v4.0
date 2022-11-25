@@ -2,10 +2,9 @@ import React, { useState, useContext } from 'react';
 import { Image } from 'react-bootstrap';
 import LanguageContext from "../../contexts/LanguageContext";
 
-const Socialnetworks = ({ interactive }) => {
+const SocialNetworks = ({ interactive }) => {
 
     const { texts } = useContext(LanguageContext);
-
     const [typePicture, setTypePicture] = useState(interactive);
 
     const styles = {
@@ -66,7 +65,10 @@ const Socialnetworks = ({ interactive }) => {
         <div style={styles}>
             {
                 oNetworkJson.map((el, index) => {
-                    return <a key={index} target="_blank" href={el.url} >
+                    return <a
+                        key={index}
+                        target="_blank"
+                        href={el.url} >
                         <Image roundedCircle
                             src={typePicture
                                 ? "./image/" + el.pictureAnimated
@@ -82,4 +84,4 @@ const Socialnetworks = ({ interactive }) => {
     );
 };
 
-export default Socialnetworks;
+export default SocialNetworks;
