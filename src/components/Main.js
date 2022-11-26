@@ -15,9 +15,7 @@ const Main = () => {
   const [showWindow, setShowWindow] = useState("H");
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
+    setLoading(false);
   });
 
 
