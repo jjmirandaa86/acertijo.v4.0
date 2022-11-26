@@ -16,7 +16,6 @@ const ThemeProvider = ({ children }) => {
   //  setTimeout(() => handleChangeTheme(), 1000);
   //  setTimeout(() => handleChangeTheme(), 10000);
 
-
   const data = { theme, setTheme, handleChangeTheme };
 
   return (

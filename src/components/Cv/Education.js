@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const Education = () => {
-    return (
-        <>Education</>
-    )
-}
+  return (
+    <>Education</>
+  );
+};
 
-export default Education
+export default Education;

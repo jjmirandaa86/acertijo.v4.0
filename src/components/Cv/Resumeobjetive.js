@@ -1,21 +1,21 @@
-import React from 'react'
+import React from 'react';
 import { Container } from "react-bootstrap";
 
 const Resumeobjetive = () => {
-    return (
-        <Container>
-            This is some text within a card body.
-            This is some text within a card body.
-            This is some text within a card body.
-            This is some text within a card body.
-            This is some text within a card body.
-            This is some text within a card body.
-            This is some text within a card body.
-            This is some text within a card body.
-            This is some text within a card body.
-            This is some text within a card body.
-        </Container>
-    )
-}
+  return (
+    <Container>
+      This is some text within a card body.
+      This is some text within a card body.
+      This is some text within a card body.
+      This is some text within a card body.
+      This is some text within a card body.
+      This is some text within a card body.
+      This is some text within a card body.
+      This is some text within a card body.
+      This is some text within a card body.
+      This is some text within a card body.
+    </Container>
+  );
+};
 
-export default Resumeobjetive
+export default Resumeobjetive;

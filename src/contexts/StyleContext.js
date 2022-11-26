@@ -13,7 +13,6 @@ const initialStateStyle = {
 const StyleProvider = ({ children }) => {
 
   const [style, setStyle] = useState(initialStateStyle);
-
   const data = { style };
 
   return (

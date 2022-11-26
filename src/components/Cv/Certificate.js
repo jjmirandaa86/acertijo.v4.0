@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const Certificate = () => {
-    return (
-        <>Certificate</>
-    )
-}
+  return (
+    <>Certificate</>
+  );
+};
 
-export default Certificate
+export default Certificate;

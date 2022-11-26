@@ -5,14 +5,14 @@ import Contact from '../page/Contact';
 
 const Body = ({ showWindow }) => {
 
-    return (
-        <>
-            {showWindow === "H" && <Home />}
-            {showWindow === "A" && <About />}
-            {showWindow === "C" && <Cv />}
-            {showWindow === "O" && <Contact />}
-        </>
-    );
+  return (
+    <>
+      {showWindow === "H" && <Home />}
+      {showWindow === "A" && <About />}
+      {showWindow === "C" && <Cv />}
+      {showWindow === "O" && <Contact />}
+    </>
+  );
 };
 
 export default Body;

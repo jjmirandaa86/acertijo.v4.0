@@ -8,25 +8,25 @@ import ThemeContext from "../contexts/ThemeContext";
 
 const Main = () => {
 
-    const { theme } = useContext(ThemeContext);
-    const [showWindow, setShowWindow] = useState("H");
+  const { theme } = useContext(ThemeContext);
+  const [showWindow, setShowWindow] = useState("H");
 
-    return (
-        <Container>
-            <div className={"bg-" + theme}>
-                <Navigation
-                    setShowWindow={setShowWindow}
-                />
-                <NavigationBar />
-                <Container >
-                    <Body showWindow={showWindow} />
-                </Container>
-                <Footer
-                    setShowWindow={setShowWindow} />
-
-            </div>
+  return (
+    <Container>
+      <div className={"bg-" + theme}>
+        <Navigation
+          setShowWindow={setShowWindow}
+        />
+        <NavigationBar />
+        <Container >
+          <Body showWindow={showWindow} />
         </Container>
-    );
+        <Footer
+          setShowWindow={setShowWindow} />
+
+      </div>
+    </Container>
+  );
 };
 
 export default Main;

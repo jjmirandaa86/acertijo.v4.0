@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const Experence = () => {
-    return (
-        <>Experence</>
-    )
-}
+  return (
+    <>Experence</>
+  );
+};
 
-export default Experence
+export default Experence;
