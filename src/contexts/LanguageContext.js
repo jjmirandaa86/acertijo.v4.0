@@ -15,6 +15,7 @@ const translations = {
 
     modePage_alt: "Modo de navegacion",
     language_alt: "Lenguaje de la pagina",
+    page_loading_img_alt: "Logo aplicación",
 
     language_img_dark_alt: "Modo de la aplicación Oscuro",
     language_img_light_alt: "Modo de la aplicación Claro",
@@ -43,6 +44,7 @@ const translations = {
 
     modePage_alt: "Navigation mode",
     language_alt: "Lenguage of the page",
+    page_loading_img_alt: "Logo app",
 
     language_img_dark_alt: "Mode Aplication Dark",
     language_img_light_alt: "Mode Aplication Light",

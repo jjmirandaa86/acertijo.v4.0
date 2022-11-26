@@ -1,13 +1,41 @@
-import { Spinner } from "react-bootstrap";
+import { useContext } from "react";
+import { Spinner, Image } from "react-bootstrap";
+import ThemeContext from "../../contexts/ThemeContext";
+import LanguageContext from "../../contexts/LanguageContext";
 
 const Loading = () => {
 
+  const { theme } = useContext(ThemeContext);
+  const { texts } = useContext(LanguageContext);
   return (
-    <>
-      <Spinner animation="grow" variant="warning"></Spinner>
-      <Spinner animation="grow" variant="primary"></Spinner>
-      <Spinner animation="grow" variant="dark"></Spinner>
-    </ >
+    <div className="align-items-center justify-content-center text-center not-found-container">
+      <br></br>
+      <br></br>
+      <br></br>
+      <div>
+        <Spinner
+          animation="grow"
+          variant={theme === 'light' ? "warning" : "light"} />
+        <Spinner
+          animation="grow"
+          variant={theme === 'light' ? "dark" : "warning"} />
+        <Spinner
+          animation="grow"
+          variant={theme === 'light' ? "warning" : "light"} />
+      </div>
+      <div>
+        <Image
+          width={100}
+          height={100}
+          variant="top"
+          alt={texts.page_loading_img_alt}
+          src={"image/programingKeys.svg"}
+        />
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+    </div>
   );
 };
 
