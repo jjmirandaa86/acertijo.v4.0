@@ -14,8 +14,8 @@ const Home = () => {
   };
 
   const nameImage = (theme === "light")
-    ? "perfil-gris50"
-    : "perfil-gris100";
+    ? "image/jeff-Computer"
+    : "image/jeff-Computer";
 
   return (
     <>
@@ -26,29 +26,7 @@ const Home = () => {
             roundedCircle
             variant="top"
             alt={texts.page_home_img_alt}
-            src={nameImage + "_800w.jpeg"}
-            srcSet={`${nameImage}_200w.jpeg 200w, 
-                        ${nameImage}_400w.jpeg 400w, 
-                        ${nameImage}_600w.jpeg 600w, 
-                        ${nameImage}_800w.jpeg 800w`}
-            sizes="(max-width: 576px) 200px, 
-                            (max-width: 768px) 400px, 
-                            (max-width: 600px) 992px, 800px"
-          />
-
-
-          <Image
-            roundedCircle
-            variant="top"
-            alt={texts.page_home_img_alt}
-            src={"elva-fairy-200w.jpg"}
-            srcSet={`elva-fairy-200w.jpg 200w, 
-                                elva-fairy-400w.jpg 400w, 
-                                elva-fairy-600w.jpg 600w, 
-                                elva-fairy-800w.jpg 800w`}
-            sizes="(max-width: 576px) 200px, 
-                                (max-width: 768px) 400px, 
-                                (max-width: 600px) 600px, 800px"
+            src={nameImage + ".jpg"}
           />
           <Card.Title>
             <div style={styles}>
