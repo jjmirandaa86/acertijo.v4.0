@@ -20,7 +20,7 @@ const Footer = ({ setShowWindow }) => {
             <Col lg md="2" xs="12">
             </Col>
             <Col lg md="3" xs="12">
-              <Nav className="flex-column">
+              <Nav className="flex-column" fixed="bottom">
                 <Nav.Link
                   onClick={() => { setShowWindow("H"); }}>
                   {texts.slideBar_home_title}

@@ -7,17 +7,18 @@ import Footer from './layout/Footer';
 import ThemeContext from "../contexts/ThemeContext";
 import LoadingContext from "../contexts/LoadingContext";
 import Loading from "./page/Loading";
+import MessageToast from "./layout/MessageToast";
 
 const Main = () => {
 
   const { theme } = useContext(ThemeContext);
   const { loading, setLoading } = useContext(LoadingContext);
+
   const [showWindow, setShowWindow] = useState("H");
 
   useEffect(() => {
     setLoading(false);
   });
-
 
   return (
     <Container>
@@ -33,6 +34,7 @@ const Main = () => {
         <Footer
           setShowWindow={setShowWindow} />
       </div>
+      <MessageToast />
     </Container>
   );
 };

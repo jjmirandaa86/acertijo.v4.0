@@ -4,15 +4,17 @@ import Logo from '../layout/Logo';
 import NavigationBar from "./NavigationBar";
 import LanguageContext from "../../contexts/LanguageContext";
 import ThemeContext from "../../contexts/ThemeContext";
+import HookNavigation from "../../hooks/HookNavigation";
 
 const Navigation = ({ setShowWindow }) => {
 
   const { theme } = useContext(ThemeContext);
   const { texts } = useContext(LanguageContext);
 
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const {
+    show,
+    handleShow,
+    handleClose } = HookNavigation();
 
   return (
     <Navbar

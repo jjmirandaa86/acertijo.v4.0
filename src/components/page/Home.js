@@ -13,10 +13,6 @@ const Home = () => {
     margin: "1rem auto",
   };
 
-  const nameImage = (theme === "light")
-    ? "image/jeff-Computer"
-    : "image/jeff-Computer";
-
   return (
     <>
       <Card bg={theme.toLowerCase()}
@@ -26,7 +22,9 @@ const Home = () => {
             roundedCircle
             variant="top"
             alt={texts.page_home_img_alt}
-            src={nameImage + ".jpg"}
+            src={(theme === "light")
+              ? "image/jeff-Computer-light.jpg"
+              : "image/jeff-Computer-dark.jpg"}
           />
           <Card.Title>
             <div style={styles}>

@@ -4,6 +4,7 @@ import "./App.css";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LoadingProvider } from "./contexts/LoadingContext";
+import { MessageProvider } from "./contexts/MessageContext";
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       <ThemeProvider>
         <LanguageProvider>
           <LoadingProvider>
-            <Main />
+            <MessageProvider>
+              <Main />
+            </MessageProvider>
           </LoadingProvider>
         </LanguageProvider>
       </ThemeProvider>

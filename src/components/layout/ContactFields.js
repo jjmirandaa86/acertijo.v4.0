@@ -1,49 +1,20 @@
 import React, { useState, useRef, useContext } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import emailjs from '@emailjs/browser';
 import LanguageContext from "../../contexts/LanguageContext";
+import HookContactFields from "../../hooks/HookContactFields";
 
 const ContactFields = () => {
 
   const { texts } = useContext(LanguageContext);
 
-  const [validated, setValidated] = useState(false);
-  const [formData, setFormData] = useState({});
-  const form = useRef();
-
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    setValidated(true);
-    sendEmail(event);
-  };
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.sendForm(
-      'service_la7thpd',
-      'template_i22xamg',
-      form.current,
-      '7dJxe1er4mSoe9ThY')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleBlur = (e) => {
-    handleChange(e);
-  };
+  const {
+    form,
+    validated,
+    formData,
+    handleSubmit,
+    handleBlur,
+    handleChange } = HookContactFields();
 
   return (
     <>
@@ -53,8 +24,7 @@ const ContactFields = () => {
         onSubmit={handleSubmit}>
 
         <Form.Group
-          className="mb-3"
-          controlId="formTitle">
+          className="mb-3">
           <Form.Label as="h5">{texts.page_contact_title} * </Form.Label>
           <Form.Control
             required
@@ -72,8 +42,7 @@ const ContactFields = () => {
         </Form.Group>
 
         <Form.Group
-          className="mb-3"
-          controlId="formName">
+          className="mb-3">
           <Form.Label as="h5">{texts.page_contact_name} * </Form.Label>
           <Form.Control
             required
@@ -91,8 +60,7 @@ const ContactFields = () => {
         </Form.Group>
 
         <Form.Group
-          className="mb-3"
-          controlId="formEmail">
+          className="mb-3">
           <Form.Label as="h5">{texts.page_contact_email} * </Form.Label>
           <Form.Control
             required
@@ -110,8 +78,7 @@ const ContactFields = () => {
         </Form.Group>
 
         <Form.Group
-          className="mb-3"
-          controlId="formPhone">
+          className="mb-3">
           <Form.Label as="h5">{texts.page_contact_phone} </Form.Label>
           <Form.Control
             type="phone"
@@ -124,8 +91,7 @@ const ContactFields = () => {
         </Form.Group>
 
         <Form.Group
-          className="mb-3"
-          controlId="formMessage">
+          className="mb-3">
           <Form.Label as="h5">{texts.page_contact_message} * </Form.Label>
           <Form.Control
             required

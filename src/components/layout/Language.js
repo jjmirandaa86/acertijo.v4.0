@@ -3,7 +3,11 @@ import LanguageContext from "../../contexts/LanguageContext";
 
 const Language = ({ height, width }) => {
 
-  const { language, handleLanguage, listLanguage, texts } = useContext(LanguageContext);
+  const {
+    language,
+    handleLanguage,
+    listLanguage,
+    texts } = useContext(LanguageContext);
 
   const { id, name, flag } = listLanguage.find(e => e.id === language);
 

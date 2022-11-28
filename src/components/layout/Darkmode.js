@@ -9,6 +9,7 @@ const DarkMode = ({ height, width }) => {
     theme,
     handleChangeTheme
   } = useContext(ThemeContext);
+
   const { texts } = useContext(LanguageContext);
 
   return (
