@@ -1,20 +1,20 @@
 import { useState, useEffect } from "react";
 
 const HookScreenSize = () => {
-  const [size, setSize] = useState({ width: 0, height: 0 });
+	const [size, setSize] = useState({ width: 0, height: 0 });
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-  }, []);
+	useEffect(() => {
+		window.addEventListener("resize", handleResize);
+	}, []);
 
-  const handleResize = () => {
-    setSize({
-      width: window.innerWidth,
-      height: window.innerHeight
-    });
-  };
+	const handleResize = () => {
+		setSize({
+			width: window.innerWidth,
+			height: window.innerHeight,
+		});
+	};
 
-  return { size };
+	return { size };
 };
 
-export default useScreenSize;
+export default HookScreenSize;
