@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Card, Row, Col, Nav } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import LanguageContext from "../../contexts/LanguageContext";
 import ThemeContext from "../../contexts/ThemeContext";
 import SocialNetworks from "../layout/Socialnetworks";
@@ -9,49 +9,45 @@ const Footer = ({ setShowWindow }) => {
 	const { theme } = useContext(ThemeContext);
 
 	return (
-		<>
-			<Card
+		<Container>
+			<Navbar
 				bg={theme.toLowerCase()}
-				text={theme === "light" ? "dark" : "white"}
-				border=""
+				data-bs-theme={theme.toLowerCase()}
+				expand="lg"
+				fixed="sticky-bottom"
+				//className="bg-body-tertiary "
+				//variant={theme.toLowerCase()}
+				//text={theme === "light" ? "dark" : "light"}
 			>
-				<Card.Body>
-					<Row>
-						<Col lg md="2" xs="12"></Col>
-						<Col lg md="3" xs="12">
-							<Nav className="flex-column" fixed="bottom">
-								<Nav.Link
-									onClick={() => {
-										setShowWindow("H");
-									}}
-								>
-									{texts.slideBar_home_title}
-								</Nav.Link>
-								<Nav.Link
-									onClick={() => {
-										setShowWindow("O");
-									}}
-								>
-									{texts.slideBar_contact_title}
-								</Nav.Link>
-							</Nav>
-						</Col>
-						<Col lg md="3" xs="12">
-							<Nav className="flex-column">
-								{/*<Nav.Link href="/home">Cv</Nav.Link>*/}
-								{/*<Nav.Link href="/home">Contact</Nav.Link>*/}
-							</Nav>
-						</Col>
-						<Col lg md="4" xs="12">
-							<SocialNetworks interactive={false} />
-						</Col>
-					</Row>
-					<Card.Text bg={"dark"} text={"dark"}>
+				<Nav
+				//className="flex-column"
+				//fixed="bottom"
+				//variant={theme.toLowerCase()}
+				//text={theme === "light" ? "dark" : "light"}
+				>
+					<Nav.Link
+						onClick={() => {
+							setShowWindow("H");
+						}}
+					>
+						{texts.slideBar_home_title}
+					</Nav.Link>
+					<Nav.Link
+						onClick={() => {
+							setShowWindow("P");
+						}}
+					>
+						{texts.slideBar_project_title}
+					</Nav.Link>
+					<Nav.Item>
+						<SocialNetworks interactive={false} />
+					</Nav.Item>
+					<Nav.Item>
 						<cite title="Source Title">{texts.footer_reserve_title}</cite>
-					</Card.Text>
-				</Card.Body>
-			</Card>
-		</>
+					</Nav.Item>
+				</Nav>
+			</Navbar>
+		</Container>
 	);
 };
 

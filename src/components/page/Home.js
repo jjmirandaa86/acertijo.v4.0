@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
-import { Card, Image, Container } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import LanguageContext from "../../contexts/LanguageContext";
 import ThemeContext from "../../contexts/ThemeContext";
 import SocialNetworks from "../layout/Socialnetworks";
+import Imagenes from "../layout/Imagenes";
 
 const Home = () => {
 	const { texts } = useContext(LanguageContext);
@@ -16,16 +17,7 @@ const Home = () => {
 		<>
 			<Card bg={theme.toLowerCase()} text={theme === "light" ? "dark" : "white"}>
 				<Card.Body>
-					<Image
-						roundedCircle
-						variant="top"
-						alt={texts.page_home_img_alt}
-						src={
-							theme === "light"
-								? "assets/ima/photos/jeff-happy-light.jpg"
-								: "assets/ima/photos/jeff-happy-dark.jpg"
-						}
-					/>
+					<Imagenes />
 					<Card.Title>
 						<div style={styles}>
 							<h1>

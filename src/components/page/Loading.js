@@ -12,13 +12,14 @@ const Loading = () => {
 			<br></br>
 			<br></br>
 			<div>
+				{" "}
 				<Spinner
 					animation="grow"
 					variant={theme === "light" ? "warning" : "light"}
 				/>
 				<Spinner
 					animation="grow"
-					variant={theme === "light" ? "dark" : "warning"}
+					variant={theme === "light" ? "warning" : "light"}
 				/>
 				<Spinner
 					animation="grow"
@@ -27,7 +28,7 @@ const Loading = () => {
 			</div>
 			<div>
 				<Image
-					width={100}
+					width={70}
 					height={100}
 					variant="top"
 					alt={texts.page_loading_img_alt}

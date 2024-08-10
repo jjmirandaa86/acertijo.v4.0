@@ -2,6 +2,7 @@ export const translations = {
 	ES: {
 		slideBar_menu_title: "Menú",
 		slideBar_home_title: "Inicio",
+		slideBar_project_title: "Proyectos",
 		slideBar_contact_title: "Contacto",
 
 		modePage_alt: "Modo de navegacion",
@@ -50,6 +51,7 @@ export const translations = {
 	EN: {
 		slideBar_menu_title: "Menu",
 		slideBar_home_title: "Home",
+		slideBar_project_title: "Projects",
 		slideBar_contact_title: "Contact",
 		modePage_alt: "Navigation mode",
 		language_alt: "Page language",

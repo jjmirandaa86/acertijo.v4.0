@@ -64,7 +64,7 @@ const SocialNetworks = ({ interactive }) => {
 		<div style={styles}>
 			{oNetworkJson.map((el, index) => {
 				return (
-					<a key={index} target="_blank" href={el.url}>
+					<a key={index} target="_blank" href={el.url} rel="image">
 						<Image
 							roundedCircle
 							src={

@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect, Suspense } from "react";
 import { Container } from "react-bootstrap";
 import Navigation from "../components/menu/Navigation";
 import NavigationBar from "../components/menu/Navigationbar";
@@ -15,21 +15,27 @@ const Main = () => {
 
 	const [showWindow, setShowWindow] = useState("H");
 
+	/*
 	useEffect(() => {
 		setLoading(false);
 	});
-
+*/
 	return (
 		<Container>
-			<div className={"bg-" + theme}>
-				<Navigation setShowWindow={setShowWindow} />
-				<NavigationBar />
-				<Container>
-					{loading ? <Loading /> : <Body showWindow={showWindow} />}
-				</Container>
-				<Footer setShowWindow={setShowWindow} />
-			</div>
-			<MessageToast />
+			<Suspense fallback={<Loading />}>
+				<div className={"bg-" + theme}>
+					<Navigation setShowWindow={setShowWindow} />
+					<NavigationBar />
+					<Container>
+						{
+							//loading ? <Loading /> : <Body showWindow={showWindow} />
+						}
+						<Body showWindow={showWindow} />
+					</Container>
+					<Footer setShowWindow={setShowWindow} />
+				</div>
+				<MessageToast />
+			</Suspense>
 		</Container>
 	);
 };

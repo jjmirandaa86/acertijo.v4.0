@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Navbar, Container, Offcanvas, Nav } from "react-bootstrap";
 import Logo from "../layout/Logo";
 import NavigationBar from "./Navigationbar";
@@ -14,7 +14,7 @@ const Navigation = ({ setShowWindow }) => {
 
 	return (
 		<Navbar expand={false} variant={theme}>
-			<Container fluid>
+			<Container fluid={true}>
 				<Navbar.Brand href="#">
 					<Logo darkMode={theme} px="230" py="60" />
 				</Navbar.Brand>
@@ -39,6 +39,14 @@ const Navigation = ({ setShowWindow }) => {
 								}}
 							>
 								{texts.slideBar_home_title}
+							</Nav.Link>
+							<Nav.Link
+								onClick={() => {
+									setShowWindow("P");
+									handleClose();
+								}}
+							>
+								{texts.slideBar_project_title}
 							</Nav.Link>
 							<Nav.Link>
 								<NavigationBar />

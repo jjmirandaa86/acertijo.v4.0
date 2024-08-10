@@ -1,18 +1,13 @@
-import Cv from '../page/Cv';
-import Home from '../page/Home';
-import About from '../page/About';
-import Contact from '../page/Contact';
+import Home from "../page/Home";
+import Projects from "../page/Projects";
 
 const Body = ({ showWindow }) => {
-
-  return (
-    <>
-      {showWindow === "H" && <Home />}
-      {showWindow === "A" && <About />}
-      {showWindow === "C" && <Cv />}
-      {showWindow === "O" && <Contact />}
-    </>
-  );
+	return (
+		<>
+			{showWindow === "H" && <Home />}
+			{showWindow === "P" && <Projects />}
+		</>
+	);
 };
 
 export default Body;
