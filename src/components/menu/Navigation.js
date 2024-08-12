@@ -13,49 +13,51 @@ const Navigation = ({ setShowWindow }) => {
 	const { show, handleShow, handleClose } = HookNavigation();
 
 	return (
-		<Navbar expand={false} variant={theme}>
-			<Container fluid={true}>
-				<Navbar.Brand href="#">
-					<Logo darkMode={theme} px="230" py="60" />
-				</Navbar.Brand>
-				<Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />
-				<Navbar.Offcanvas
-					id="offcanvasNavbar"
-					placement="end"
-					show={show}
-					onHide={handleClose}
-				>
-					<Offcanvas.Header closeButton>
-						<Offcanvas.Title id="offcanvasNavbarLabel">
-							{texts.slideBar_menu_title}
-						</Offcanvas.Title>
-					</Offcanvas.Header>
-					<Offcanvas.Body>
-						<Nav className="justify-content-end flex-grow-1 pe-3">
-							<Nav.Link
-								onClick={() => {
-									setShowWindow("H");
-									handleClose();
-								}}
-							>
-								{texts.slideBar_home_title}
-							</Nav.Link>
-							<Nav.Link
-								onClick={() => {
-									setShowWindow("P");
-									handleClose();
-								}}
-							>
-								{texts.slideBar_project_title}
-							</Nav.Link>
-							<Nav.Link>
-								<NavigationBar />
-							</Nav.Link>
-						</Nav>
-					</Offcanvas.Body>
-				</Navbar.Offcanvas>
-			</Container>
-		</Navbar>
+		<>
+			<Navbar expand={false} variant={theme}>
+				<Container fluid={true}>
+					<Navbar.Brand href="#">
+						<Logo darkMode={theme} px="230" py="60" />
+					</Navbar.Brand>
+					<Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />
+					<Navbar.Offcanvas
+						id="offcanvasNavbar"
+						placement="end"
+						show={show}
+						onHide={handleClose}
+					>
+						<Offcanvas.Header closeButton>
+							<Offcanvas.Title id="offcanvasNavbarLabel">
+								{texts.slideBar_menu_title}
+							</Offcanvas.Title>
+						</Offcanvas.Header>
+						<Offcanvas.Body>
+							<Nav className="justify-content-end flex-grow-1 pe-3">
+								<Nav.Link
+									onClick={() => {
+										setShowWindow("H");
+										handleClose();
+									}}
+								>
+									{texts.slideBar_home_title}
+								</Nav.Link>
+								<Nav.Link
+									onClick={() => {
+										setShowWindow("P");
+										handleClose();
+									}}
+								>
+									{texts.slideBar_project_title}
+								</Nav.Link>
+								<Nav.Link>
+									<NavigationBar />
+								</Nav.Link>
+							</Nav>
+						</Offcanvas.Body>
+					</Navbar.Offcanvas>
+				</Container>
+			</Navbar>
+		</>
 	);
 };
 

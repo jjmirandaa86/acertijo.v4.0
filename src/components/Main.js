@@ -30,7 +30,7 @@ const Main = () => {
 						{
 							//loading ? <Loading /> : <Body showWindow={showWindow} />
 						}
-						<Body showWindow={showWindow} />
+						<Body showWindow={showWindow} setShowWindow={setShowWindow} />
 					</Container>
 					<Footer setShowWindow={setShowWindow} />
 				</div>

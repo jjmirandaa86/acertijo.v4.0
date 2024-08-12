@@ -9,34 +9,31 @@ const ListProjects = () => {
 
 	const listProyects = [
 		{
-			id: 1,
-			name: "English words",
-			details: "List of words in foreign language for learning",
-			url: "https://prd.english.acertijo.dev",
-			img: "learning-words.svg",
+			id: texts.page_projects_n1_id,
+			name: texts.page_projects_n1_title,
+			details: texts.page_projects_n1_details,
+			url: texts.page_projects_n1_url,
+			img: texts.page_projects_n1_img,
 		},
 		{
-			id: 2,
-			name: "Business administration",
-			details: "Software for controlling stock and sales operations",
-			url: "https://prd.miranda.acertijo.dev",
-			img: "miranda-software.svg",
+			id: texts.page_projects_n2_id,
+			name: texts.page_projects_n2_title,
+			details: texts.page_projects_n2_details,
+			url: texts.page_projects_n2_url,
+			img: texts.page_projects_n2_img,
 		},
 		{
-			id: 3,
-			name: "CV interactive",
-			details: "Curriculum vitae interactive",
-			url: "https://prd.cv.acertijo.dev",
-			img: "cv-jm.svg",
+			id: texts.page_projects_n3_id,
+			name: texts.page_projects_n3_title,
+			details: texts.page_projects_n3_details,
+			url: texts.page_projects_n3_url,
+			img: texts.page_projects_n3_img,
 		},
 	];
 
 	return (
 		<>
 			<Container>
-				<div style={{ padding: 20 }}>
-					<h2>Proyects</h2>
-				</div>
 				<div>
 					<CardGroup>
 						{listProyects.map((p) => (

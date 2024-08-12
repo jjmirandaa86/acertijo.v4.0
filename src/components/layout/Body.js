@@ -1,10 +1,10 @@
 import Home from "../page/Home";
 import Projects from "../page/Projects";
 
-const Body = ({ showWindow }) => {
+const Body = ({ showWindow, setShowWindow }) => {
 	return (
 		<>
-			{showWindow === "H" && <Home />}
+			{showWindow === "H" && <Home setShowWindow={setShowWindow} />}
 			{showWindow === "P" && <Projects />}
 		</>
 	);
