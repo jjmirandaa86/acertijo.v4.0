@@ -25,20 +25,20 @@ export const translations = {
 		page_projects_n1_title: "Palabras en Ingles",
 		page_projects_n1_details:
 			"Lista de palabras in lenguaje extranjero para aprender.",
-		page_projects_n1_url: "https://prd.english.acertijo.dev",
+		page_projects_n1_url: "https://prdenglish.acertijo.dev",
 		page_projects_n1_img: "learning-words.svg",
 
 		page_projects_n2_id: 2,
 		page_projects_n2_title: "Administador de negocios",
 		page_projects_n2_details:
 			"Software para controlar el inventario y operar las ventas.",
-		page_projects_n2_url: "https://prd.miranda.acertijo.dev",
+		page_projects_n2_url: "https://prdmiranda.acertijo.dev",
 		page_projects_n2_img: "miranda-software.svg",
 
 		page_projects_n3_id: 3,
 		page_projects_n3_title: "Curriculum Interactivo",
 		page_projects_n3_details: "Perfil curriculum Interactivo",
-		page_projects_n3_url: "https://prd.cv.acertijo.dev",
+		page_projects_n3_url: "https://prdcv.acertijo.dev",
 		page_projects_n3_img: "cv-jm.svg",
 
 		page_contact_form_title: "Formulario de contacto",
@@ -92,20 +92,20 @@ export const translations = {
 		page_projects_n1_id: 1,
 		page_projects_n1_title: "English words",
 		page_projects_n1_details: "List of words in foreign language for learning",
-		page_projects_n1_url: "https://prd.english.acertijo.dev",
+		page_projects_n1_url: "https://prdenglish.acertijo.dev",
 		page_projects_n1_img: "learning-words.svg",
 
 		page_projects_n2_id: 2,
 		page_projects_n2_title: "Business administration",
 		page_projects_n2_details:
 			"Software for controlling stock and sales operations",
-		page_projects_n2_url: "https://prd.miranda.acertijo.dev",
+		page_projects_n2_url: "https://prdmiranda.acertijo.dev",
 		page_projects_n2_img: "miranda-software.svg",
 
 		page_projects_n3_id: 3,
 		page_projects_n3_title: "CV interactive",
 		page_projects_n3_details: "Curriculum vitae interactive",
-		page_projects_n3_url: "https://prd.cv.acertijo.dev",
+		page_projects_n3_url: "https://prdcv.acertijo.dev",
 		page_projects_n3_img: "cv-jm.svg",
 
 		page_contact_form_title: "Contact form",
