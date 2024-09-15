@@ -31,6 +31,13 @@ const Footer = ({ setShowWindow }) => {
 					>
 						{texts.slideBar_project_title}
 					</Nav.Link>
+					<Nav.Link
+						onClick={() =>
+							window.open("/assets/pdf/CV-Jefferson Miranda.pdf", "_blank")
+						}
+					>
+						{texts.slideBar_cv_title}
+					</Nav.Link>
 				</Nav>
 			</Navbar>
 			<Navbar

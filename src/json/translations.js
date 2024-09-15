@@ -4,6 +4,7 @@ export const translations = {
 		slideBar_home_title: "Inicio",
 		slideBar_project_title: "Proyectos",
 		slideBar_contact_title: "Contacto",
+		slideBar_cv_title: "Cv",
 		modePage_alt: "Modo de navegacion",
 		language_alt: "Lenguaje de la pagina",
 		page_loading_img_alt: "Logo aplicación",
@@ -12,12 +13,12 @@ export const translations = {
 		flag_img_alt: "Bandera del tipo de idioma ",
 		page_home_img_alt: "Imagen de Jefferson Miranda",
 		page_home_title: "Jefferson Miranda A.",
-		page_home_subtitle: "Desarrollador de software",
+		page_home_subtitle: "Desarrollador Full stack ",
 		page_home_body1:
-			"Soy desarrollador de Software Full Stack con más de 9 años de experiencia.",
+			"Soy un Desarrollador de Software Full Stack con más de 12 años de experiencia, especializado en la creación de soluciones escalables y de alto rendimiento tanto para sistemas Frontend como Backend.",
 		page_home_body2:
-			"He colaborado en múltiples herramientas de gran rendimiento y escalabilidad del lado Frontend y Backend, este último, logrando conectar distintas fuentes de información. Utilizo patrones de diseño MVC, entre otros. Estoy familiarizado principalmente en ecosistemas Javascript.",
-		page_home_body3: "Más acerca de mí.",
+			"Mi experiencia abarca múltiples tecnologías, con un fuerte enfoque en la conexión de diversas fuentes de datos y la implementación de patrones de diseño eficientes como MVC. Tengo amplia experiencia trabajando en ecosistemas JavaScript, entregando software fiable y robusto.",
+		page_home_body3: "Más información sobre mi trayectoria y mis proyectos aquí.",
 		page_projects_title: "Proyectos",
 		page_projects_body1:
 			"En el siguiente portfolio, presento tres proyectos destacados que he desarrollado utilizando las tecnologías más avanzadas en desarrollo web: React, Next.js, redux, etc. Cada uno de estos proyectos no solo refleja mis habilidades técnicas y creatividad, sino también mi capacidad para abordar desafíos complejos y crear soluciones eficientes. Desde aplicaciones web interactivas hasta sitios con un rendimiento optimizado y experiencias de usuario intuitivas, estos ejemplos demuestran cómo utilizo estas herramientas para construir interfaces modernas y funcionales. A continuación, descubrirás cómo se ha diseñado y desarrollado cada proyecto para ofrecer una experiencia única y profesional.",
@@ -25,20 +26,20 @@ export const translations = {
 		page_projects_n1_title: "Palabras en Ingles",
 		page_projects_n1_details:
 			"Lista de palabras in lenguaje extranjero para aprender.",
-		page_projects_n1_url: "https://prdenglish.acertijo.dev",
+		page_projects_n1_url: "https://www.prdenglish.acertijo.dev",
 		page_projects_n1_img: "learning-words.svg",
 
 		page_projects_n2_id: 2,
 		page_projects_n2_title: "Administador de negocios",
 		page_projects_n2_details:
 			"Software para controlar el inventario y operar las ventas.",
-		page_projects_n2_url: "https://prdmiranda.acertijo.dev",
+		page_projects_n2_url: "https://www.prdmiranda.acertijo.dev",
 		page_projects_n2_img: "miranda-software.svg",
 
 		page_projects_n3_id: 3,
 		page_projects_n3_title: "Curriculum Interactivo",
 		page_projects_n3_details: "Perfil curriculum Interactivo",
-		page_projects_n3_url: "https://prdcv.acertijo.dev",
+		page_projects_n3_url: "https://www.prdcv.acertijo.dev",
 		page_projects_n3_img: "cv-jm.svg",
 
 		page_contact_form_title: "Formulario de contacto",
@@ -72,6 +73,7 @@ export const translations = {
 		slideBar_home_title: "Home",
 		slideBar_project_title: "Projects",
 		slideBar_contact_title: "Contact",
+		slideBar_cv_title: "Cv",
 		modePage_alt: "Navigation mode",
 		language_alt: "Page language",
 		page_loading_img_alt: "Application logo",
@@ -80,32 +82,32 @@ export const translations = {
 		flag_img_alt: "Language type flag",
 		page_home_img_alt: "Image of Jefferson Miranda",
 		page_home_title: "Jefferson Miranda A.",
-		page_home_subtitle: "Software Developer",
+		page_home_subtitle: "Full stack Developer",
 		page_home_body1:
-			"I am a Full Stack Software Developer with more than 9 years of experience.",
+			"I am a Full Stack Software Developer with over 12 years of experience, specializing in creating high-performance, scalable solutions for both Frontend and Backend systems.",
 		page_home_body2:
-			"I have collaborated in multiple tools of great performance and scalability of the Frontend and Backend side, the latter, managing to connect different sources of information. I use MVC design patterns, among others. I am mainly familiar with Javascript ecosystems.",
-		page_home_body3: "More about me",
+			"My expertise spans multiple technologies, with a strong focus on connecting diverse data sources and implementing efficient design patterns such as MVC. I have extensive experience working within JavaScript ecosystems, delivering reliable and robust software. ",
+		page_home_body3: "Learn more about my journey and projects here.",
 		page_projects_title: "Projects",
 		page_projects_body1:
 			"In the following portfolio, I present three outstanding projects that I have developed using the most advanced technologies in web development: React, Next.js, redux, etc. Each of these projects not only reflects my technical skills and creativity, but also my ability to tackle complex challenges and create efficient solutions. From interactive web applications to sites with optimized performance and intuitive user experiences, these examples demonstrate how I use these tools to build modern and functional interfaces. Below, you'll discover how each project has been designed and developed to deliver a unique and professional experience.",
 		page_projects_n1_id: 1,
 		page_projects_n1_title: "English words",
 		page_projects_n1_details: "List of words in foreign language for learning",
-		page_projects_n1_url: "https://prdenglish.acertijo.dev",
+		page_projects_n1_url: "https://www.prdenglish.acertijo.dev",
 		page_projects_n1_img: "learning-words.svg",
 
 		page_projects_n2_id: 2,
 		page_projects_n2_title: "Business administration",
 		page_projects_n2_details:
 			"Software for controlling stock and sales operations",
-		page_projects_n2_url: "https://prdmiranda.acertijo.dev",
+		page_projects_n2_url: "https://www.prdmiranda.acertijo.dev",
 		page_projects_n2_img: "miranda-software.svg",
 
 		page_projects_n3_id: 3,
 		page_projects_n3_title: "CV interactive",
 		page_projects_n3_details: "Curriculum vitae interactive",
-		page_projects_n3_url: "https://prdcv.acertijo.dev",
+		page_projects_n3_url: "https://www.prdcv.acertijo.dev",
 		page_projects_n3_img: "cv-jm.svg",
 
 		page_contact_form_title: "Contact form",

@@ -25,30 +25,23 @@ const Home = ({ setShowWindow }) => {
 						<h2>
 							<strong>{texts.page_home_subtitle} </strong>
 						</h2>
-						<div>
-							<a
-								onClick={() => {
-									setShowWindow("P");
-								}}
-							>
-								<div>
-									<Image
-										src="./assets/svg/portafolio.svg"
-										height={10}
-										width={80}
-										fluid
-									/>
-								</div>
-								<div style={{ fontSize: 12 }}>
-									<i>Portafolio</i>{" "}
-								</div>
-							</a>
-						</div>
 					</Card.Title>
 					<Card.Text>
 						<h3>
 							<strong>{texts.page_home_body1}</strong> {texts.page_home_body2}{" "}
-							{texts.page_home_body3}
+							<a
+								target="_blank"
+								href={"/assets/pdf/CV-Jefferson Miranda.pdf"}
+								rel="image"
+							>
+								{texts.page_home_body3}{" "}
+								<Image
+									src={"./assets/png/curriculum-vitae.png"}
+									height={"40"}
+									width={"40"}
+									//alt={el.alt}
+								/>
+							</a>
 						</h3>
 					</Card.Text>
 					<SocialNetworks interactive={true} />
@@ -59,41 +52,3 @@ const Home = ({ setShowWindow }) => {
 };
 
 export default Home;
-
-/*
-<Container>
-							<Row>
-								<Col sm={6} md={8} lg={8}>
-									<div style={{ float: "right" }}>
-										<h1>
-											<strong>{texts.page_home_title} </strong>
-										</h1>
-										<h2>
-											<strong>{texts.page_home_subtitle} </strong>
-										</h2>
-									</div>
-								</Col>
-								<Col sm={6} md={4} lg={4}>
-									<div style={{ float: "left" }}>
-										<a
-											onClick={() => {
-												setShowWindow("P");
-											}}
-										>
-											<div>
-												<Image
-													src="./assets/svg/portafolio.svg"
-													height={10}
-													width={80}
-													fluid
-												/>
-											</div>
-											<div style={{ fontSize: 12 }}>
-												<i>Portafolio</i>{" "}
-											</div>
-										</a>
-									</div>
-								</Col>
-							</Row>
-						</Container>
-*/
