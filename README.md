@@ -40,7 +40,7 @@ Install my-project with npm
 
 ## Screenshots
 
-![Main mobile](https://github.com/jjmirandaa86/acertijo.v4.0/blob/main/public/assets/photo_project/main-desktop.png)
+![Main mobile](https://github.com/jjmirandaa86/acertijo.v4.0/blob/main/public/assets/photo_project/main-mobile.png)
 
 
 ![Main desktop](https://github.com/jjmirandaa86/acertijo.v4.0/blob/main/public/assets/photo_project/main-desktop.png)
