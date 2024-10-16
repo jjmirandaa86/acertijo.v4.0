@@ -27,14 +27,14 @@ export const translations = {
 		page_projects_n1_details:
 			"Lista de palabras in lenguaje extranjero para aprender.",
 		page_projects_n1_url: "https://www.prdenglish.acertijo.dev",
-		page_projects_n1_img: "learning-words.svg",
+		page_projects_n1_img: "-learning.svg",
 
 		page_projects_n2_id: 2,
 		page_projects_n2_title: "Administador de negocios",
 		page_projects_n2_details:
 			"Software para controlar el inventario y operar las ventas.",
 		page_projects_n2_url: "https://www.prdmiranda.acertijo.dev",
-		page_projects_n2_img: "miranda-software.svg",
+		page_projects_n2_img: "-business.svg",
 
 		page_projects_n3_id: 3,
 		page_projects_n3_title: "Curriculum Interactivo",
@@ -95,14 +95,14 @@ export const translations = {
 		page_projects_n1_title: "English words",
 		page_projects_n1_details: "List of words in foreign language for learning",
 		page_projects_n1_url: "https://www.prdenglish.acertijo.dev",
-		page_projects_n1_img: "learning-words.svg",
+		page_projects_n1_img: "-learning.svg",
 
 		page_projects_n2_id: 2,
 		page_projects_n2_title: "Business administration",
 		page_projects_n2_details:
 			"Software for controlling stock and sales operations",
 		page_projects_n2_url: "https://www.prdmiranda.acertijo.dev",
-		page_projects_n2_img: "miranda-software.svg",
+		page_projects_n2_img: "-business.svg",
 
 		page_projects_n3_id: 3,
 		page_projects_n3_title: "CV interactive",

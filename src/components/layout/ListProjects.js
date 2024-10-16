@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Card, Container, CardGroup } from "react-bootstrap";
+import { Card, Container, CardGroup, Row, Col } from "react-bootstrap";
 import LanguageContext from "../../contexts/LanguageContext";
 import ThemeContext from "../../contexts/ThemeContext";
 
@@ -22,13 +22,6 @@ const ListProjects = () => {
 			url: texts.page_projects_n2_url,
 			img: texts.page_projects_n2_img,
 		},
-		{
-			id: texts.page_projects_n3_id,
-			name: texts.page_projects_n3_title,
-			details: texts.page_projects_n3_details,
-			url: texts.page_projects_n3_url,
-			img: texts.page_projects_n3_img,
-		},
 	];
 
 	return (
@@ -42,20 +35,26 @@ const ListProjects = () => {
 								text={theme.toLowerCase() === "light" ? "dark" : "white"}
 								key={p.id}
 							>
-								<Card.Img
-									width={2}
-									//height={}
-									//fluid={true}
-									variant="top"
-									src={"assets/svg/" + p.img}
-								/>
-								<Card.Body>
-									<Card.Title>{p.name} </Card.Title>
-									<Card.Text>{p.details}</Card.Text>
-									<a target="_blank" href={p.url} rel="">
-										Link
-									</a>
-								</Card.Body>
+								<Row>
+									<Col></Col>
+									<Col xs={8} sm={12} md={8} lg={5}>
+										<Card.Img
+											width={2}
+											//height={}
+											//fluid={true}
+											variant="top"
+											src={"assets/svg/" + p.img}
+										/>
+										<Card.Body>
+											<Card.Title>{p.name} </Card.Title>
+											<Card.Text>{p.details}</Card.Text>
+											<a target="_blank" href={p.url} rel="">
+												Link
+											</a>
+										</Card.Body>
+									</Col>
+									<Col></Col>
+								</Row>
 							</Card>
 						))}
 					</CardGroup>

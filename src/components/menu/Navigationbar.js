@@ -1,3 +1,4 @@
+import { Navbar, Container } from "react-bootstrap";
 import DarkMode from "../layout/Darkmode";
 import Language from "../layout/Language";
 
@@ -6,12 +7,20 @@ const NavigationBar = () => {
 		padding: "10px 15px 10px 20px",
 	};
 
+	const expand = false;
+	const theme = "dark";
+
 	return (
-		<div className="text-end">
-			<div style={styles}>
-				<DarkMode height={25} width={25} /> <Language height={20} width={20} />
-			</div>
-		</div>
+		<>
+			<Navbar>
+				<Container>
+					<Navbar.Text></Navbar.Text>
+					<Navbar.Text>
+						<DarkMode height={25} width={25} /> <Language height={20} width={20} />
+					</Navbar.Text>
+				</Container>
+			</Navbar>
+		</>
 	);
 };
 

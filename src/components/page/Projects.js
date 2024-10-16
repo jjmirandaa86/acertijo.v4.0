@@ -10,10 +10,12 @@ const Projects = () => {
 
 	return (
 		<Card bg={theme.toLowerCase()} text={theme === "light" ? "dark" : "white"}>
-			<Card.Title>
+			<Card.Title className="m-1">
 				<h2>{texts.page_projects_title}</h2>
 			</Card.Title>
-			<Card.Text>{texts.page_projects_body1}</Card.Text>
+			<Card.Text>
+				<h4>{texts.page_projects_body1}</h4>
+			</Card.Text>
 			<ListProjects />
 		</Card>
 	);

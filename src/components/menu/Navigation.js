@@ -1,5 +1,13 @@
 import React, { useContext } from "react";
-import { Navbar, Container, Offcanvas, Nav } from "react-bootstrap";
+import {
+	Container,
+	Navbar,
+	Button,
+	Offcanvas,
+	Nav,
+	NavDropdown,
+	Form,
+} from "react-bootstrap";
 import Logo from "../layout/Logo";
 import NavigationBar from "./Navigationbar";
 import LanguageContext from "../../contexts/LanguageContext";
@@ -11,17 +19,19 @@ const Navigation = ({ setShowWindow }) => {
 	const { texts } = useContext(LanguageContext);
 
 	const { show, handleShow, handleClose } = HookNavigation();
+	const expand = false;
 
 	return (
 		<>
-			<Navbar expand={false} variant={theme}>
-				<Container fluid={true}>
+			<Navbar key={expand} expand={expand} bg={theme} data-bs-theme={theme}>
+				<Container>
 					<Navbar.Brand href="#">
 						<Logo darkMode={theme} px="230" py="60" />
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />
 					<Navbar.Offcanvas
-						id="offcanvasNavbar"
+						id={`offcanvasNavbar-expand-${expand}`}
+						aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
 						placement="end"
 						show={show}
 						onHide={handleClose}

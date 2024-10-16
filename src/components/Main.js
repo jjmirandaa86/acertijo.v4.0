@@ -1,5 +1,15 @@
 import React, { useContext, useState, useEffect, Suspense } from "react";
-import { Container } from "react-bootstrap";
+import {
+	Container,
+	Navbar,
+	Button,
+	Offcanvas,
+	Nav,
+	NavDropdown,
+	Form,
+	Col,
+	Row,
+} from "react-bootstrap";
 import Navigation from "../components/menu/Navigation";
 import NavigationBar from "../components/menu/Navigationbar";
 import Body from "./layout/Body";
@@ -15,28 +25,36 @@ const Main = () => {
 
 	const [showWindow, setShowWindow] = useState("H");
 
-	/*
-	useEffect(() => {
-		setLoading(false);
-	});
-*/
+	const backgroundImageDark =
+		"linear-gradient(163deg, rgba(43,48,53,1) 0%, rgba(28,140,180,1) 37%, rgba(255,193,7,1) 76%, rgba(255,255,255,1) 100%)";
+	const backgroundImageLight =
+		"linear-gradient(163deg, rgba(255,255,255,1) 0%, rgba(28,140,180,1) 37%, rgba(255,193,7,1) 76%, rgba(43,48,53,1) 100%)";
+
 	return (
-		<Container>
-			<Suspense fallback={<Loading />}>
-				<div className={"bg-" + theme}>
-					<Navigation setShowWindow={setShowWindow} />
-					<NavigationBar />
+		<div
+			style={{
+				backgroundImage:
+					theme === "dark" ? backgroundImageDark : backgroundImageLight,
+			}}
+		>
+			<Navigation setShowWindow={setShowWindow} />
+			<NavigationBar />
+			<div>
+				<Container>
 					<Container>
-						{
-							//loading ? <Loading /> : <Body showWindow={showWindow} />
-						}
-						<Body showWindow={showWindow} setShowWindow={setShowWindow} />
+						<Row>
+							<Col></Col>
+							<Col xs={12} sm={12} md={12}>
+								<Body showWindow={showWindow} setShowWindow={setShowWindow} />
+							</Col>
+							<Col></Col>
+						</Row>
 					</Container>
-					<Footer setShowWindow={setShowWindow} />
-				</div>
-				<MessageToast />
-			</Suspense>
-		</Container>
+					<MessageToast />
+				</Container>
+			</div>
+			<Footer setShowWindow={setShowWindow} />
+		</div>
 	);
 };
 

@@ -1,28 +1,26 @@
 import { createContext, useState } from "react";
-
 const ThemeContext = createContext();
 
-const initialTheme = "light";
+const initialTheme = "dark";
 
 const ThemeProvider = ({ children }) => {
+	const [theme, setTheme] = useState(initialTheme);
 
-  const [theme, setTheme] = useState(initialTheme);
+	const handleChangeTheme = () => {
+		if (theme === "light") {
+			setTheme("dark");
+		} else {
+			setTheme("light");
+		}
+	};
 
-  const handleChangeTheme = () => {
-    if (theme === "light") { setTheme("dark"); }
-    else { setTheme("light"); }
-  };
+	const data = { theme, setTheme, handleChangeTheme };
 
-  //  setTimeout(() => handleChangeTheme(), 1000);
-  //  setTimeout(() => handleChangeTheme(), 10000);
-
-  const data = { theme, setTheme, handleChangeTheme };
-
-  return (
-    <ThemeContext.Provider value={data}>
-      {children}
-    </ThemeContext.Provider>
-  );
+	return (
+		<>
+			<ThemeContext.Provider value={data}>{children}</ThemeContext.Provider>
+		</>
+	);
 };
 
 export { ThemeProvider };
