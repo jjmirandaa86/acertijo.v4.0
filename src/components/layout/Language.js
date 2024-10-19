@@ -5,7 +5,7 @@ const Language = ({ height, width }) => {
 	const { language, handleLanguage, listLanguage, texts } =
 		useContext(LanguageContext);
 
-	const { id, name, flag } = listLanguage.find((e) => e.id === language);
+	const { name, flag } = listLanguage.find((e) => e.id === language);
 
 	return (
 		<>

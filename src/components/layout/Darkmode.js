@@ -9,12 +9,12 @@ const DarkMode = ({ height, width }) => {
 	const { texts } = useContext(LanguageContext);
 
 	return (
-		<>
-			<a
-				onClick={() => {
-					handleChangeTheme();
-				}}
-			>
+		<div
+			onClick={() => {
+				handleChangeTheme();
+			}}
+		>
+			<div>
 				{theme === "dark" ? (
 					<Image
 						src={"./assets/svg/sunLight.svg"}
@@ -25,7 +25,6 @@ const DarkMode = ({ height, width }) => {
 							alignItems: "center",
 							justifyContent: "center",
 						}}
-						href=""
 					/>
 				) : (
 					<Image
@@ -37,11 +36,10 @@ const DarkMode = ({ height, width }) => {
 							alignItems: "center",
 							justifyContent: "center",
 						}}
-						href=""
 					/>
 				)}
-			</a>
-		</>
+			</div>
+		</div>
 	);
 };
 

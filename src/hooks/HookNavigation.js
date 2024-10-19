@@ -1,18 +1,17 @@
-import react, { useState } from 'react';
+import { useState } from "react";
 
 const HookNavigation = () => {
-  const [show, setShow] = useState(false);
+	const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
+	const handleClose = () => setShow(false);
 
-  const handleShow = () => setShow(true);
+	const handleShow = () => setShow(true);
 
-  return {
-    show,
-    handleShow,
-    handleClose
-  };
+	return {
+		show,
+		handleShow,
+		handleClose,
+	};
 };
 
 export default HookNavigation;
-

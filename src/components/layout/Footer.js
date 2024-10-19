@@ -13,7 +13,7 @@ const Footer = ({ setShowWindow }) => {
 			<Navbar
 				bg={theme.toLowerCase()}
 				data-bs-theme={theme.toLowerCase()}
-				expand="lg"
+				expand="xxl"
 				fixed="sticky-bottom"
 			>
 				<Container>
@@ -49,12 +49,7 @@ const Footer = ({ setShowWindow }) => {
 				fixed="sticky-bottom"
 			>
 				<Container>
-					<Nav>
-						<Nav.Link>
-							<SocialNetworks interactive={false} />
-							<cite title="Source Title">{texts.footer_reserve_title}</cite>
-						</Nav.Link>
-					</Nav>
+					<SocialNetworks interactive={false} />
 				</Container>
 			</Navbar>
 		</div>

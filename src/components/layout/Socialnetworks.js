@@ -1,14 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Image } from "react-bootstrap";
 import LanguageContext from "../../contexts/LanguageContext";
 
 const SocialNetworks = ({ interactive }) => {
 	const { texts } = useContext(LanguageContext);
-	const [typePicture, setTypePicture] = useState(interactive);
-
-	const styles = {
-		margin: "1rem auto",
-	};
 
 	const oNetworkJson = [
 		{
@@ -61,14 +56,14 @@ const SocialNetworks = ({ interactive }) => {
   */
 
 	return (
-		<div style={styles}>
+		<div>
 			{oNetworkJson.map((el, index) => {
 				return (
-					<a key={index} target="_blank" href={el.url} rel="image">
+					<a key={index} target="_blank" href={el.url} rel="noreferrer">
 						<Image
 							roundedCircle
 							src={
-								typePicture
+								interactive
 									? "./assets/gif/" + el.pictureAnimated
 									: "./assets/svg/" + el.picture
 							}

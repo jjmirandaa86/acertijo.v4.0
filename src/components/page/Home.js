@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Card, Image, Col, Row, Container } from "react-bootstrap";
+import { Card, Image } from "react-bootstrap";
 import LanguageContext from "../../contexts/LanguageContext";
 import ThemeContext from "../../contexts/ThemeContext";
 import SocialNetworks from "../layout/Socialnetworks";
@@ -8,10 +8,6 @@ import Imagenes from "../layout/Imagenes";
 const Home = ({ setShowWindow }) => {
 	const { texts } = useContext(LanguageContext);
 	const { theme } = useContext(ThemeContext);
-
-	const styles = {
-		margin: "1rem auto",
-	};
 
 	return (
 		<>
@@ -22,9 +18,9 @@ const Home = ({ setShowWindow }) => {
 						<h1>
 							<strong>{texts.page_home_title} </strong>
 						</h1>
-						<h2>
+						<h1>
 							<strong>{texts.page_home_subtitle} </strong>
-						</h2>
+						</h1>
 					</Card.Title>
 					<Card.Text>
 						<h3>
@@ -32,7 +28,7 @@ const Home = ({ setShowWindow }) => {
 							<a
 								target="_blank"
 								href={"/assets/pdf/CV-Jefferson Miranda.pdf"}
-								rel="image"
+								rel="noreferrer"
 							>
 								{texts.page_home_body3}{" "}
 								<Image

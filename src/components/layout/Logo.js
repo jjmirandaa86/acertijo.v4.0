@@ -15,7 +15,7 @@ const Logo = ({ px, py }) => {
 				width={px}
 				height={py}
 				className="App-logo"
-				alt="Acertijo logo"
+				alt="Acertijo logo, personal brand"
 			/>
 		</>
 	);

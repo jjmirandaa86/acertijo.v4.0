@@ -1,7 +1,6 @@
 "use client";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Suspense } from "react";
 import Main from "./components/Main";
 import "./App.css";
 import { LanguageProvider } from "./contexts/LanguageContext";

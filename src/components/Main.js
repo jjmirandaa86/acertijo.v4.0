@@ -1,27 +1,14 @@
-import React, { useContext, useState, useEffect, Suspense } from "react";
-import {
-	Container,
-	Navbar,
-	Button,
-	Offcanvas,
-	Nav,
-	NavDropdown,
-	Form,
-	Col,
-	Row,
-} from "react-bootstrap";
+import React, { useContext, useState } from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import Navigation from "../components/menu/Navigation";
 import NavigationBar from "../components/menu/Navigationbar";
 import Body from "./layout/Body";
 import Footer from "../components/layout/Footer";
 import ThemeContext from "../contexts/ThemeContext";
-import LoadingContext from "../contexts/LoadingContext";
-import Loading from "./page/Loading";
 import MessageToast from "./layout/MessageToast";
 
 const Main = () => {
 	const { theme } = useContext(ThemeContext);
-	const { loading, setLoading } = useContext(LoadingContext);
 
 	const [showWindow, setShowWindow] = useState("H");
 

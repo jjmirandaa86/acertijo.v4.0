@@ -3,13 +3,6 @@ import DarkMode from "../layout/Darkmode";
 import Language from "../layout/Language";
 
 const NavigationBar = () => {
-	const styles = {
-		padding: "10px 15px 10px 20px",
-	};
-
-	const expand = false;
-	const theme = "dark";
-
 	return (
 		<>
 			<Navbar>

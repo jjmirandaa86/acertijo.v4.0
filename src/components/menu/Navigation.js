@@ -1,13 +1,5 @@
 import React, { useContext } from "react";
-import {
-	Container,
-	Navbar,
-	Button,
-	Offcanvas,
-	Nav,
-	NavDropdown,
-	Form,
-} from "react-bootstrap";
+import { Container, Navbar, Offcanvas, Nav } from "react-bootstrap";
 import Logo from "../layout/Logo";
 import NavigationBar from "./Navigationbar";
 import LanguageContext from "../../contexts/LanguageContext";

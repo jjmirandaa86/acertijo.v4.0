@@ -48,7 +48,7 @@ const ListProjects = () => {
 										<Card.Body>
 											<Card.Title>{p.name} </Card.Title>
 											<Card.Text>{p.details}</Card.Text>
-											<a target="_blank" href={p.url} rel="">
+											<a target="_blank" href={p.url} rel="noreferrer">
 												Link
 											</a>
 										</Card.Body>
