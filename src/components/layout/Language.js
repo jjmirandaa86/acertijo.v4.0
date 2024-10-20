@@ -8,7 +8,7 @@ const Language = ({ height, width }) => {
 	const { name, flag } = listLanguage.find((e) => e.id === language);
 
 	return (
-		<>
+		<div>
 			<img
 				src={"./assets/svg/" + flag}
 				height={height}
@@ -20,7 +20,7 @@ const Language = ({ height, width }) => {
 				alt={texts.flag_img_alt + name}
 				onClick={handleLanguage}
 			/>
-		</>
+		</div>
 	);
 };
 
