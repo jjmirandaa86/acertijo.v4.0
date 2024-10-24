@@ -22,6 +22,7 @@ const Main = () => {
 			style={{
 				backgroundImage:
 					theme === "dark" ? backgroundImageDark : backgroundImageLight,
+				minHeight: "100dvh",
 			}}
 		>
 			<Navigation setShowWindow={setShowWindow} />

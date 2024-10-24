@@ -9,7 +9,7 @@ const Footer = ({ setShowWindow }) => {
 	const { theme } = useContext(ThemeContext);
 
 	return (
-		<div>
+		<div style={{ minHeight: "calc(100% - 200px)" }}>
 			<Navbar
 				bg={theme.toLowerCase()}
 				data-bs-theme={theme.toLowerCase()}
