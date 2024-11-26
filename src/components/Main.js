@@ -25,7 +25,7 @@ const Main = () => {
 				minHeight: "100dvh",
 			}}
 		>
-			<Navigation setShowWindow={setShowWindow} />
+			<Navigation setShowWindow={setShowWindow} showWindow={showWindow} />
 			<NavigationBar />
 			<div>
 				<Container>

@@ -6,7 +6,7 @@ import LanguageContext from "../../contexts/LanguageContext";
 import ThemeContext from "../../contexts/ThemeContext";
 import HookNavigation from "../../hooks/HookNavigation";
 
-const Navigation = ({ setShowWindow }) => {
+const Navigation = ({ setShowWindow, showWindow }) => {
 	const { theme } = useContext(ThemeContext);
 	const { texts } = useContext(LanguageContext);
 
@@ -34,33 +34,50 @@ const Navigation = ({ setShowWindow }) => {
 							</Offcanvas.Title>
 						</Offcanvas.Header>
 						<Offcanvas.Body>
-							<Nav className="justify-content-end flex-grow-1 pe-3">
-								<Nav.Link
-									onClick={() => {
-										setShowWindow("H");
-										handleClose();
-									}}
-								>
-									{texts.slideBar_home_title}
-								</Nav.Link>
-								<Nav.Link
-									onClick={() => {
-										setShowWindow("P");
-										handleClose();
-									}}
-								>
-									{texts.slideBar_project_title}
-								</Nav.Link>
-								<Nav.Link
-									onClick={() =>
-										window.open("/assets/pdf/CV-Jefferson Miranda.pdf", "_blank")
-									}
-								>
-									{texts.slideBar_cv_title}
-								</Nav.Link>
-								<Nav.Link>
-									<NavigationBar />
-								</Nav.Link>
+							<Nav
+								variant="pills"
+								className="justify-content-end flex-grow-1 pe-3"
+								activeKey={showWindow}
+							>
+								<Nav.Item>
+									<Nav.Link
+										href="#"
+										eventKey="H"
+										onClick={() => {
+											setShowWindow("H");
+											handleClose();
+										}}
+									>
+										{texts.slideBar_home_title}
+									</Nav.Link>
+								</Nav.Item>
+								<Nav.Item>
+									<Nav.Link
+										href="#"
+										eventKey="P"
+										onClick={() => {
+											setShowWindow("P");
+											handleClose();
+										}}
+									>
+										{texts.slideBar_project_title}
+									</Nav.Link>
+								</Nav.Item>
+								<Nav.Item>
+									<Nav.Link
+										href="#"
+										onClick={() =>
+											window.open("/assets/pdf/CV-Jefferson Miranda.pdf", "_blank")
+										}
+									>
+										{texts.slideBar_cv_title}
+									</Nav.Link>
+								</Nav.Item>
+								<Nav.Item>
+									<Nav.Link>
+										<NavigationBar />
+									</Nav.Link>
+								</Nav.Item>
 							</Nav>
 						</Offcanvas.Body>
 					</Navbar.Offcanvas>
