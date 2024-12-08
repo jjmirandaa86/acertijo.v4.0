@@ -11,6 +11,16 @@ export const translations = {
 		language_img_dark_alt: "Modo de la aplicación Oscuro",
 		language_img_light_alt: "Modo de la aplicación Claro",
 		flag_img_alt: "Bandera del tipo de idioma ",
+		msg_Christmas_1:
+			"Que el espíritu de amor y paz de la Navidad te acompañe durante todo el año.",
+		msg_Christmas_2:
+			"La Navidad no se trata de abrir regalos, se trata de abrir nuestro corazón.",
+		msg_Christmas_3:
+			"El mejor adorno de Navidad es una gran sonrisa. ¡Feliz Navidad!",
+		msg_Christmas_4:
+			"Feliz Navidad, que el amor inunde tu hogar y el de tu familia.",
+		msg_Christmas_5:
+			"Que tus ilusiones, sueños, deseos y anhelos se hagan realidad esta Navidad.",
 		page_home_img_alt: "Imagen de Jefferson Miranda",
 		page_home_title: "Jefferson Miranda A.",
 		page_home_subtitle: "Desarrollador Full stack ",
@@ -28,6 +38,12 @@ export const translations = {
 			"Lista de palabras in lenguaje extranjero para aprender.",
 		page_projects_n1_url: "https://www.prdenglish.acertijo.dev",
 		page_projects_n1_img: "-learning.svg",
+		page_projects_n1_code: "https://github.com/jjmirandaa86/learningwords",
+		page_projects_n1_imgTechnology1: "react.svg",
+		page_projects_n1_imgTechnology2: "nextjs.svg",
+		page_projects_n1_imgTechnology3: "redux.svg",
+		page_projects_n1_imgTechnology4: "bootstrap.svg",
+		page_projects_n1_imgTechnology5: "",
 
 		page_projects_n2_id: 2,
 		page_projects_n2_title: "Administador de negocios",
@@ -35,6 +51,12 @@ export const translations = {
 			"Software para controlar el inventario y operar las ventas.",
 		page_projects_n2_url: "https://www.prdmiranda.acertijo.dev",
 		page_projects_n2_img: "-business.svg",
+		page_projects_n1_code: "",
+		page_projects_n1_imgTechnology1: "react.svg",
+		page_projects_n1_imgTechnology2: "nextjs.svg",
+		page_projects_n1_imgTechnology3: "redux.svg",
+		page_projects_n1_imgTechnology4: "bootstrap.svg",
+		page_projects_n1_imgTechnology5: "",
 
 		page_projects_n3_id: 3,
 		page_projects_n3_title: "Curriculum Interactivo",
@@ -80,6 +102,16 @@ export const translations = {
 		language_img_dark_alt: "Dark application mode",
 		language_img_light_alt: "Light application mode",
 		flag_img_alt: "Language type flag",
+		msg_Christmas_1:
+			"May the spirit of love and peace of Christmas be with you throughout the year.",
+		msg_Christmas_2:
+			"Christmas is not about opening presents, it is about opening our hearts.",
+		msg_Christmas_3:
+			"The best Christmas decoration is a big smile - Merry Christmas!",
+		msg_Christmas_4:
+			"Merry Christmas, may love flood your home and your family's home.",
+		msg_Christmas_5:
+			"May your illusions, dreams, wishes and desires come true this Christmas.",
 		page_home_img_alt: "Image of Jefferson Miranda",
 		page_home_title: "Jefferson Miranda A.",
 		page_home_subtitle: "Full stack Developer",

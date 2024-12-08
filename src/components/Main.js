@@ -7,26 +7,20 @@ import Footer from "../components/layout/Footer";
 import ThemeContext from "../contexts/ThemeContext";
 import MessageToast from "./layout/MessageToast";
 
-const Main = () => {
-	const { theme } = useContext(ThemeContext);
+const Main = ({ isChristmas }) => {
+	const { background } = useContext(ThemeContext);
 
 	const [showWindow, setShowWindow] = useState("H");
-
-	const backgroundImageDark =
-		"linear-gradient(163deg, rgba(43,48,53,1) 0%, rgba(28,140,180,1) 37%, rgba(255,193,7,1) 76%, rgba(255,255,255,1) 100%)";
-	const backgroundImageLight =
-		"linear-gradient(163deg, rgba(255,255,255,1) 0%, rgba(28,140,180,1) 37%, rgba(255,193,7,1) 76%, rgba(43,48,53,1) 100%)";
 
 	return (
 		<div
 			style={{
-				backgroundImage:
-					theme === "dark" ? backgroundImageDark : backgroundImageLight,
+				backgroundImage: background,
 				minHeight: "100dvh",
 			}}
 		>
 			<Navigation setShowWindow={setShowWindow} showWindow={showWindow} />
-			<NavigationBar />
+			{isChristmas && <NavigationBar />}
 			<div>
 				<Container>
 					<Container>
