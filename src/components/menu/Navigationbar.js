@@ -64,9 +64,10 @@ const NavigationBar = () => {
 			<div
 				style={{
 					background: "-webkit-linear-gradient(orange, red)",
-					"-webkit-background-clip": "text",
-					"-webkit-text-fill-color": "transparent",
+					WebkitBackgroundClip: "text",
+					WebkitTextFillColor: "transparent",
 					color: "red",
+					padding: "15px",
 				}}
 			>
 				<Row style={{ alignItems: "center" }}>

@@ -2,6 +2,7 @@ export const translations = {
 	ES: {
 		slideBar_menu_title: "Menú",
 		slideBar_home_title: "Inicio",
+		slideBar_technology_title: "Tecnologias",
 		slideBar_project_title: "Proyectos",
 		slideBar_contact_title: "Contacto",
 		slideBar_cv_title: "Cv",
@@ -29,6 +30,21 @@ export const translations = {
 		page_home_body2:
 			"Mi experiencia abarca múltiples tecnologías, con un fuerte enfoque en la conexión de diversas fuentes de datos y la implementación de patrones de diseño eficientes como MVC. Tengo amplia experiencia trabajando en ecosistemas JavaScript, entregando software fiable y robusto.",
 		page_home_body3: "Más información sobre mi trayectoria y mis proyectos aquí.",
+		page_technology_title: "Tecnologias",
+		page_technology_body_general:
+			"Como desarrollador de software, cuento con una sólida experiencia en tecnologías tanto del lado del frontend como del backend. ",
+		page_technology_body_frontEnd_title: "FrontEnd",
+		page_technology_body_frontEnd:
+			"En el desarrollo frontend, utilizo React para crear interfaces dinámicas e interactivas, apoyándome en HTML, JavaScript y Redux para manejar el estado de las aplicaciones. También empleo Axios para la comunicación con APIs y herramientas como Bootstrap, React-Bootstrap y Mantine para estilizar y maquetar de manera eficiente. ",
+		page_technology_body_backEnd_title: "Backend",
+		page_technology_body_backEnd:
+			"En el lado del backend, trabajo con Node.js y Express para construir aplicaciones robustas y escalables, además de Laravel, donde lo conecto con bases de datos utilizando su ORM Eloquent y Artisan para facilitar la gestión de migraciones y modelos. A lo largo de mi carrera, he implementado múltiples API RESTful, asegurando integraciones eficientes y seguras entre sistemas. ",
+		page_technology_body_bd_title: "Base de datos",
+		page_technology_body_bd:
+			"En cuanto a bases de datos, tengo experiencia conectando mis aplicaciones con diversos sistemas como MySQL, SQL Server, Oracle, PostgreSQL y MongoDB. Manejo sentencias DDL (Definición de Datos) y DML (Manipulación de Datos) para crear, modificar y gestionar estructuras de datos y registros de forma eficiente. ",
+		page_technology_body_other_title: "Otros",
+		page_technology_body_other:
+			"También he desarrollado aplicaciones móviles utilizando Android Studio, ampliando mis capacidades hacia el desarrollo móvil. Adicionalmente, utilizo imágenes de Docker para crear ambientes controlados de desarrollo y producción, lo que facilita la portabilidad y consistencia de las aplicaciones. Me desenvuelvo con soltura en distintos sistemas operativos, como Linux, macOS y Windows, adaptándome fácilmente a cualquier entorno de trabajo. Finalmente, utilizo Git y GitHub para el control de versiones, garantizando un flujo de trabajo organizado y colaborativo.",
 		page_projects_title: "Proyectos",
 		page_projects_body1:
 			"En el siguiente portfolio, presento tres proyectos destacados que he desarrollado utilizando las tecnologías más avanzadas en desarrollo web: React, Next.js, redux, etc. Cada uno de estos proyectos no solo refleja mis habilidades técnicas y creatividad, sino también mi capacidad para abordar desafíos complejos y crear soluciones eficientes. Desde aplicaciones web interactivas hasta sitios con un rendimiento optimizado y experiencias de usuario intuitivas, estos ejemplos demuestran cómo utilizo estas herramientas para construir interfaces modernas y funcionales. A continuación, descubrirás cómo se ha diseñado y desarrollado cada proyecto para ofrecer una experiencia única y profesional.",
@@ -93,6 +109,7 @@ export const translations = {
 	EN: {
 		slideBar_menu_title: "Menu",
 		slideBar_home_title: "Home",
+		slideBar_technology_title: "Technology",
 		slideBar_project_title: "Projects",
 		slideBar_contact_title: "Contact",
 		slideBar_cv_title: "Cv",
@@ -120,9 +137,25 @@ export const translations = {
 		page_home_body2:
 			"My expertise spans multiple technologies, with a strong focus on connecting diverse data sources and implementing efficient design patterns such as MVC. I have extensive experience working within JavaScript ecosystems, delivering reliable and robust software. ",
 		page_home_body3: "Learn more about my journey and projects here.",
+		page_technology_title: "Technology",
+		page_technology_body_general:
+			"As a software developer, I have solid experience in both frontend and backend technologies. ",
+		page_technology_body_frontEnd_title: "FrontEnd",
+		page_technology_body_frontEnd:
+			"In frontend development, I use React to create dynamic and interactive interfaces, relying on HTML, JavaScript and Redux to manage the state of the applications. I also use Axios to communicate with APIs and tools like Bootstrap, React-Bootstrap and Mantine for efficient styling and layout. ",
+		page_technology_body_backEnd_title: "Backend",
+		page_technology_body_backEnd:
+			"On the backend side, I work with Node.js and Express to build robust and scalable applications, as well as Laravel, where I connect it to databases using its Eloquent ORM and Artisan to facilitate migration and model management. Throughout my career, I have implemented multiple RESTful APIs, ensuring efficient and secure integrations between systems. ",
+		page_technology_body_bd_title: "Database",
+		page_technology_body_bd:
+			"In terms of databases, I have experience connecting my applications with various systems such as MySQL, SQL Server, Oracle, PostgreSQL and MongoDB. I handle DDL (Data Definition) and DML (Data Manipulation) statements to create, modify and manage data structures and records efficiently. ",
+		page_technology_body_other_title: "Others",
+		page_technology_body_other:
+			"I have also developed mobile applications using Android Studio, extending my capabilities towards mobile development. Additionally, I use Docker images to create controlled development and production environments, which facilitates application portability and consistency. I am fluent in different operating systems, such as Linux, macOS and Windows, adapting easily to any working environment. Finally, I use Git and GitHub for version control, ensuring an organised and collaborative workflow.",
 		page_projects_title: "Projects",
 		page_projects_body1:
 			"In the following portfolio, I present three outstanding projects that I have developed using the most advanced technologies in web development: React, Next.js, redux, etc. Each of these projects not only reflects my technical skills and creativity, but also my ability to tackle complex challenges and create efficient solutions. From interactive web applications to sites with optimized performance and intuitive user experiences, these examples demonstrate how I use these tools to build modern and functional interfaces. Below, you'll discover how each project has been designed and developed to deliver a unique and professional experience.",
+
 		page_projects_n1_id: 1,
 		page_projects_n1_title: "English words",
 		page_projects_n1_details: "List of words in foreign language for learning",

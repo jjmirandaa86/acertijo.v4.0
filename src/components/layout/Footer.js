@@ -11,8 +11,10 @@ const Footer = ({ setShowWindow }) => {
 	return (
 		<div style={{ minHeight: "calc(100% - 200px)" }}>
 			<Navbar
-				bg={theme.toLowerCase()}
-				data-bs-theme={theme.toLowerCase()}
+				//bg={theme.toLowerCase()}
+				bg={"dark"}
+				//data-bs-theme={theme.toLowerCase()}
+				data-bs-theme={"dark".toLowerCase()}
 				expand="xxl"
 				fixed="sticky-bottom"
 			>
@@ -24,6 +26,13 @@ const Footer = ({ setShowWindow }) => {
 							}}
 						>
 							{texts.slideBar_home_title}
+						</Nav.Link>
+						<Nav.Link
+							onClick={() => {
+								setShowWindow("T");
+							}}
+						>
+							{texts.slideBar_technology_title}
 						</Nav.Link>
 						<Nav.Link
 							onClick={() => {
@@ -43,8 +52,10 @@ const Footer = ({ setShowWindow }) => {
 				</Container>
 			</Navbar>
 			<Navbar
-				bg={theme.toLowerCase()}
-				data-bs-theme={theme.toLowerCase()}
+				//bg={theme.toLowerCase()}
+				//data-bs-theme={theme.toLowerCase()}
+				bg={"dark"}
+				data-bs-theme={"dark".toLowerCase()}
 				expand="lg"
 				fixed="sticky-bottom"
 			>

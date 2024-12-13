@@ -16,10 +16,16 @@ const Navigation = ({ setShowWindow, showWindow }) => {
 
 	return (
 		<>
-			<Navbar key={expand} expand={expand} bg={theme} data-bs-theme={theme}>
+			<Navbar
+				key={expand}
+				expand={expand}
+				//</>bg={theme}
+				bg={"dark"}
+				data-bs-theme={theme}
+			>
 				<Container>
 					<Navbar.Brand href="#">
-						<Logo darkMode={theme} px="230" py="60" />
+						<Logo darkMode={theme} px="190" py="55" />
 					</Navbar.Brand>
 					<Navbar.Text style={{ display: "flex", alignItems: "center" }}>
 						<div style={{ margin: "10px" }}>
@@ -54,6 +60,18 @@ const Navigation = ({ setShowWindow, showWindow }) => {
 											}}
 										>
 											{texts.slideBar_home_title}
+										</Nav.Link>
+									</Nav.Item>
+									<Nav.Item>
+										<Nav.Link
+											href="#"
+											eventKey="T"
+											onClick={() => {
+												setShowWindow("T");
+												handleClose();
+											}}
+										>
+											{texts.slideBar_technology_title}
 										</Nav.Link>
 									</Nav.Item>
 									<Nav.Item>

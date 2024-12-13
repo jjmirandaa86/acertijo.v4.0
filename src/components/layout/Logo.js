@@ -7,11 +7,14 @@ const Logo = ({ px, py }) => {
 	return (
 		<>
 			<img
+				/*
 				src={
 					theme === "dark"
 						? "./assets/png/logo_white.png"
 						: "./assets/png/logo_dark.png"
 				}
+						*/
+				src={"./assets/png/logo_white.png"}
 				width={px}
 				height={py}
 				className="App-logo"
