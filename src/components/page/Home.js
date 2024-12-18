@@ -23,22 +23,23 @@ const Home = ({ setShowWindow }) => {
 						</h1>
 					</Card.Title>
 					<Card.Text>
-						<h3>
-							<strong>{texts.page_home_body1}</strong> {texts.page_home_body2}{" "}
-							<a
-								target="_blank"
-								href={"/assets/pdf/CV-Jefferson Miranda.pdf"}
-								rel="noreferrer"
-							>
-								{texts.page_home_body3}{" "}
-								<Image
-									src={"./assets/png/curriculum-vitae.png"}
-									height={"40"}
-									width={"40"}
-									//alt={el.alt}
-								/>
-							</a>
-						</h3>
+						<strong>
+							<h3>{texts.page_home_body1}</h3>
+						</strong>{" "}
+						{texts.page_home_body2}{" "}
+						<a
+							target="_blank"
+							href={"/assets/pdf/CV-Jefferson Miranda.pdf"}
+							rel="noreferrer"
+						>
+							{texts.page_home_body3}
+							<Image
+								src={"./assets/png/curriculum-vitae.png"}
+								height={"40"}
+								width={"40"}
+								//alt={el.alt}
+							/>
+						</a>
 					</Card.Text>
 					<SocialNetworks interactive={true} />
 				</Card.Body>
