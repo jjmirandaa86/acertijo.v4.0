@@ -5,6 +5,7 @@ import { SiAndroidstudio } from "react-icons/si";
 import { FaDocker } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { LuChartNoAxesCombined } from "react-icons/lu";
 
 import { FaApple } from "react-icons/fa";
 import { FaWindows } from "react-icons/fa";
@@ -38,18 +39,26 @@ const Others = ({ sizeIcon, sizeText }) => {
 		},
 		{
 			id: 5,
+			name: "Power BI",
+			component: (color) => (
+				<LuChartNoAxesCombined size={sizeIcon} color={color} />
+			),
+			color: "#F1CA18",
+		},
+		{
+			id: 6,
 			name: "MacOS",
 			component: (color) => <FaApple size={sizeIcon} color={color} />,
 			color: "",
 		},
 		{
-			id: 6,
+			id: 7,
 			name: "Windows",
 			component: (color) => <FaWindows size={sizeIcon} color={color} />,
 			color: "#09A1E4",
 		},
 		{
-			id: 7,
+			id: 8,
 			name: "Linux",
 			component: (color) => <FaLinux size={sizeIcon} color={color} />,
 			color: "#545C61	",

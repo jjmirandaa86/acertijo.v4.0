@@ -21,7 +21,7 @@ const Navigation = ({ setShowWindow, showWindow }) => {
 				expand={expand}
 				//</>bg={theme}
 				bg={"dark"}
-				data-bs-theme={theme}
+				data-bs-theme={"dark"}
 			>
 				<Container>
 					<Navbar.Brand href="#">

@@ -12,8 +12,8 @@ const Home = ({ setShowWindow }) => {
 	return (
 		<>
 			<Card bg={theme.toLowerCase()} text={theme === "light" ? "dark" : "white"}>
+				<Imagenes />
 				<Card.Body>
-					<Imagenes />
 					<Card.Title>
 						<h1>
 							<strong>{texts.page_home_title} </strong>

@@ -12,6 +12,7 @@ import { SiMantine } from "react-icons/si";
 import { SiReactbootstrap } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaCss3Alt } from "react-icons/fa";
+import { SiVite } from "react-icons/si";
 
 const FrontEnd = ({ sizeIcon, sizeText }) => {
 	const data = [
@@ -74,6 +75,12 @@ const FrontEnd = ({ sizeIcon, sizeText }) => {
 			name: "Tailwind",
 			component: (color) => <RiTailwindCssFill size={sizeIcon} color={color} />,
 			color: "#38BDF8",
+		},
+		{
+			id: 11,
+			name: "Vite",
+			component: (color) => <SiVite size={sizeIcon} color={color} />,
+			color: "#5713CD",
 		},
 	];
 
